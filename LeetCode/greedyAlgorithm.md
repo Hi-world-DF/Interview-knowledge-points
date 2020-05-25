@@ -1,7 +1,7 @@
 # 贪心算法
 * [1.AssignCookies(饼干分配问题)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/greedyAlgorithm.md#1assigncookies%E9%A5%BC%E5%B9%B2%E5%88%86%E9%85%8D%E9%97%AE%E9%A2%98)
 * [2.NonOverlappingIntervals(不重叠区间个数)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/greedyAlgorithm.md#2nonoverlappingintervals%E4%B8%8D%E9%87%8D%E5%8F%A0%E5%8C%BA%E9%97%B4%E4%B8%AA%E6%95%B0)
-* [2.NonOverlappingIntervals(不重叠区间个数)]()
+* [3.ReconstructionByHeight(按身高重排序)]()
 
 
 ## 1.AssignCookies(饼干分配问题)
@@ -49,7 +49,7 @@ public class AssignCookies {
 ```
 
 ## 2.NonOverlappingIntervals(不重叠区间个数)  
-问题描述：[LeedCode]()   
+问题描述：[LeedCode](https://leetcode-cn.com/problems/non-overlapping-intervals/description/)   
 解决代码：
 ``` java
 package greedyAlgorithm;
@@ -92,4 +92,49 @@ public class NonOverlappingIntervals {
 
 }
 
+```
+## 3.ReconstructionByHeight(按身高重排序) 
+问题描述：[LeedCode](https://leetcode-cn.com/problems/queue-reconstruction-by-height/)   
+解决代码：
+``` java
+package greedyAlgorithm;
+
+import java.lang.reflect.Array;
+import java.util.*;
+
+/**
+ * 贪心算法
+ * leetcode:https://leetcode-cn.com/problems/queue-reconstruction-by-height/
+ * 根据身高重新排序
+ * */
+public class ReconstructionByHeight {
+    public int[][] reconstructQueue(int[][] people) {
+        Arrays.sort(people, new Comparator<int[]>() {
+            @Override
+            public int compare(int[] o1, int[] o2) {
+                return o1[0]==o2[0]?o1[1] - o2[1]:o2[0] - o1[0];
+            }
+        });
+
+        List<int[]> result =new ArrayList<>();
+        for(int[] p : people) {
+            result.add(p[1], p);
+        }
+        int num = people.length;
+        return result.toArray(new int[num][2]);
+    }
+    public static void main(String[] args){
+        ReconstructionByHeight rbh = new ReconstructionByHeight();
+        int[][] p ={{7,0}, {4,4}, {7,1}, {5,0}, {6,1}, {5,2}};
+        System.out.println("input:");
+        for(int[] a : p){
+            System.out.print(Arrays.toString(a)+" ");
+        }
+        int[][] a =rbh.reconstructQueue(p);
+        System.out.println("\noutput:");
+        for(int[] b : a){
+            System.out.print(Arrays.toString(b)+" ");
+        }
+    }
+}
 ```
