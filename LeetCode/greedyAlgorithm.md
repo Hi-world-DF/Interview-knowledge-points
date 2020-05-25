@@ -5,7 +5,8 @@
 
 
 ## 1.AssignCookies(饼干分配问题)
-问题描述：[LeedCode]()解决代码：
+问题描述：[LeedCode]() 
+解决代码：
 ``` java
 package greedyAlgorithm;
 
@@ -48,7 +49,8 @@ public class AssignCookies {
 ```
 
 ## 2.NonOverlappingIntervals(不重叠区间个数)
-问题描述：[LeedCode]()解决代码：
+问题描述：[LeedCode]()
+解决代码：
 ``` java
 package greedyAlgorithm;
 
