@@ -2,7 +2,7 @@
 * [1.AssignCookies(饼干分配问题)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/greedyAlgorithm.md#1assigncookies%E9%A5%BC%E5%B9%B2%E5%88%86%E9%85%8D%E9%97%AE%E9%A2%98)
 * [2.NonOverlappingIntervals(不重叠区间个数)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/greedyAlgorithm.md#2nonoverlappingintervals%E4%B8%8D%E9%87%8D%E5%8F%A0%E5%8C%BA%E9%97%B4%E4%B8%AA%E6%95%B0)
 * [3.ReconstructionByHeight(按身高重排序)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/greedyAlgorithm.md#3reconstructionbyheight%E6%8C%89%E8%BA%AB%E9%AB%98%E9%87%8D%E6%8E%92%E5%BA%8F)
-
+* [4.MinimumNumberOfArrowsToBurstBalloons最少的箭引爆所有气球]()
 
 ## 1.AssignCookies(饼干分配问题)
 问题描述：[LeedCode](https://leetcode-cn.com/problems/assign-cookies/)  
@@ -135,6 +135,48 @@ public class ReconstructionByHeight {
         for(int[] b : a){
             System.out.print(Arrays.toString(b)+" ");
         }
+    }
+}
+```
+
+## 4.MinimumNumberOfArrowsToBurstBalloons(最少的箭引爆所有气球)
+问题描述：[LeedCode](https://leetcode-cn.com/problems/minimum-number-of-arrows-to-burst-balloons/description/)   
+解决代码：
+``` java
+package greedyAlgorithm;
+
+import java.util.Arrays;
+import java.util.Comparator;
+/**
+ * 贪心算法
+ * leetcode:https://leetcode-cn.com/problems/minimum-number-of-arrows-to-burst-balloons/description/
+ * 最少的箭引爆所有气球
+ * */
+public class MinimumNumberOfArrowsToBurstBalloons {
+    public int findMinArrowShots(int[][] points) {
+        if(points.length == 0){
+            return 0;
+        }
+        Arrays.sort(points, Comparator.comparingInt(o -> o[1]));
+        int sum = 1;
+        int b = points[0][1];
+        for(int i = 1 ;i < points.length;i++){
+            int pre = points[i][0];
+            if(pre <= b){
+                continue;
+            }else{
+                b = points[i][1];
+                sum++;
+            }
+        }
+        return sum;
+    }
+
+    public static void main(String[] args){
+        MinimumNumberOfArrowsToBurstBalloons mnoatbb =new MinimumNumberOfArrowsToBurstBalloons();
+        int[][] points = {{2,3},{1,5},{4,7},{8,9}};
+        int num = mnoatbb.findMinArrowShots(points);
+        System.out.println("最少需要 "+num+" 支箭");
     }
 }
 ```
