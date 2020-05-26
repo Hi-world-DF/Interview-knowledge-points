@@ -4,8 +4,7 @@
 * [希尔排序](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/sort.md#3%E5%B8%8C%E5%B0%94%E6%8E%92%E5%BA%8F)
 
 ## 1.选择排序
-
-
+算法思想：
 代码：
 ``` java 
 package sortAll;
@@ -59,7 +58,7 @@ public class Selection {
 ```
 
 ## 2.插入排序
-
+算法思想：
 代码：
 ``` java
 package sortAll;
@@ -105,7 +104,7 @@ public class Insertion {
 ```
 
 ## 3.希尔排序
-
+算法思想：
 代码：
 ``` java
 package sortAll;
