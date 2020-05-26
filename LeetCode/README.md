@@ -8,6 +8,7 @@
 ## 2.排序
 * [1.选择排序](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/sort.md#1%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F)
 * [2.插入排序](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/sort.md#2%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F)
+* [3.希尔排序](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/sort.md#3%E5%B8%8C%E5%B0%94%E6%8E%92%E5%BA%8F)
 
 ## 3.贪心算法
 * [1.AssignCookies(饼干分配问题)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/greedyAlgorithm.md#1assigncookies%E9%A5%BC%E5%B9%B2%E5%88%86%E9%85%8D%E9%97%AE%E9%A2%98)
