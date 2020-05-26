@@ -1,7 +1,7 @@
 # 经典的各种排序算法
 * [选择排序](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/sort.md#1%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F)
 * [插入排序](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/sort.md#2%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F)
-* [希尔排序]()
+* [希尔排序](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/sort.md#3%E5%B8%8C%E5%B0%94%E6%8E%92%E5%BA%8F)
 
 ## 1.选择排序
 
@@ -11,7 +11,6 @@
 package sortAll;
 
 /**
- * 2020/05/23
  * 选择排序
  * */
 public class Selection {
@@ -109,5 +108,58 @@ public class Insertion {
 
 代码：
 ``` java
+package sortAll;
+/**
+ * 希尔排序
+ * */
+public class Shell {
+    public static void sort(int[] a){
+        int n = a.length;
+        int h =1;
+        while (h < n/3){
+            h = 3*h +1;
+        }
+        while (h >= 1){
+            for(int i = h;i < n;i++){
+                for(int j = i;j >= h && less(a[j],a[j-h]);j-=h){
+                    exchange(a,j,j-h);
+                }
+            }
+            h = h/3;
+        }
+    }
+    /**
+     * 交换
+     * */
+    private static void exchange(int[] a, int j, int i) {
+        if(a[j] < a[i]){
+            int temp = a[j];
+            a[j] = a[i];
+            a[i] = temp;
+        }
+    }
+    /**
+     * 比较
+     * */
+    private static boolean less(int a, int b) {
+        if(a < b){
+            return true;
+        }
+        return false;
+    }
+    private static void isSorted(int[] a){
+        for(int i = 0;i < a.length;i++){
+            System.out.print(a[i]+" ");
+        }
+    }
+    /**
+     * 测试
+     * */
+    public static void main(String[] args){
+        int[] a = {2,3,1,7,12,32,6,2,5};
+        Shell.sort(a);
+        Shell.isSorted(a);
+    }
+}
 
 ```
