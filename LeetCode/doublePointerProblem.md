@@ -52,7 +52,12 @@ public class AddTwoNumbers {
 问题描述：[LeedCode](https://leetcode-cn.com/problems/sum-of-square-numbers/)  
 代码：
 ``` java
-class Solution {
+/**
+ * 双指针问题
+ * leetcode:https://leetcode-cn.com/problems/sum-of-square-numbers/
+ * 两数平方和
+ * */
+public class SumOfSquareNumbers {
     public boolean judgeSquareSum(int c) {
         int i =0;
         int j =(int) Math.sqrt(c);
@@ -67,6 +72,15 @@ class Solution {
             }
         }
         return false;
+    }
+    /**
+     * 测试
+     * */
+    public static void main(String[] args){
+        int c = 5;
+        SumOfSquareNumbers sumOfSquareNumbers =new SumOfSquareNumbers();
+        boolean result = sumOfSquareNumbers.judgeSquareSum(c);
+        System.out.println("能否找到："+result);
     }
 }
 ```
