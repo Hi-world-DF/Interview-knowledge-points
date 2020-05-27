@@ -89,7 +89,12 @@ public class SumOfSquareNumbers {
 问题描述：[LeedCode](https://leetcode-cn.com/problems/reverse-vowels-of-a-string/)  
 代码：
 ``` java
-class Solution {
+/**
+ * 双指针问题
+ * leetcode:https://leetcode-cn.com/problems/reverse-vowels-of-a-string/
+ * 反转字符串中的元音字符
+ * */
+public class ReverseVowelsOfString {
     public String reverseVowels(String s) {
         //使用hashSet存储元音字符
         HashSet<Character> vowels = new HashSet<>(Arrays.asList('a','e','i','o','u','A','E','I','O','U'));
@@ -118,6 +123,15 @@ class Solution {
             }
         }
         return new String(result);
+    }
+    /**
+     * 测试
+     * */
+    public static void main(String[] args){
+        ReverseVowelsOfString reverseVowelsOfString = new ReverseVowelsOfString();
+        String s = "leetcode";
+        String result = reverseVowelsOfString.reverseVowels(s);
+        System.out.println(result);
     }
 }
 ```
