@@ -7,6 +7,7 @@
 算法思想：
 代码：
 ``` java
+
 ```
 
 ## 2.SumOfSquareNumbers(两数平方和)
