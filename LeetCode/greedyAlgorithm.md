@@ -4,7 +4,7 @@
 * [3.ReconstructionByHeight(按身高重排序)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/greedyAlgorithm.md#3reconstructionbyheight%E6%8C%89%E8%BA%AB%E9%AB%98%E9%87%8D%E6%8E%92%E5%BA%8F)
 * [4.MinimumNumberOfArrowsToBurstBalloons(最少的箭引爆所有气球)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/greedyAlgorithm.md#4minimumnumberofarrowstoburstballoons%E6%9C%80%E5%B0%91%E7%9A%84%E7%AE%AD%E5%BC%95%E7%88%86%E6%89%80%E6%9C%89%E6%B0%94%E7%90%83)
 * [5.BestTimeToBuyAndSellStock(买卖股票的最佳时期)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/greedyAlgorithm.md#5besttimetobuyandsellstock%E4%B9%B0%E5%8D%96%E8%82%A1%E7%A5%A8%E7%9A%84%E6%9C%80%E4%BD%B3%E6%97%B6%E6%9C%9F)
-* [6.BestTimeToBuyAndSellStock ii (买卖股票的最佳时期 2)]()
+* [6.BestTimeToBuyAndSellStock ii (买卖股票的最佳时期 2)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/greedyAlgorithm.md#6besttimetobuyandsellstock-ii-%E4%B9%B0%E5%8D%96%E8%82%A1%E7%A5%A8%E7%9A%84%E6%9C%80%E4%BD%B3%E6%97%B6%E6%9C%9F-2)
 
 ## 1.AssignCookies(饼干分配问题)
 问题描述：[LeedCode](https://leetcode-cn.com/problems/assign-cookies/)  
