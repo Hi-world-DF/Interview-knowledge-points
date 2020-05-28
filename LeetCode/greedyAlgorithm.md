@@ -2,8 +2,9 @@
 * [1.AssignCookies(饼干分配问题)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/greedyAlgorithm.md#1assigncookies%E9%A5%BC%E5%B9%B2%E5%88%86%E9%85%8D%E9%97%AE%E9%A2%98)
 * [2.NonOverlappingIntervals(不重叠区间个数)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/greedyAlgorithm.md#2nonoverlappingintervals%E4%B8%8D%E9%87%8D%E5%8F%A0%E5%8C%BA%E9%97%B4%E4%B8%AA%E6%95%B0)
 * [3.ReconstructionByHeight(按身高重排序)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/greedyAlgorithm.md#3reconstructionbyheight%E6%8C%89%E8%BA%AB%E9%AB%98%E9%87%8D%E6%8E%92%E5%BA%8F)
-* [4.MinimumNumberOfArrowsToBurstBalloons最少的箭引爆所有气球](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/greedyAlgorithm.md#4minimumnumberofarrowstoburstballoons%E6%9C%80%E5%B0%91%E7%9A%84%E7%AE%AD%E5%BC%95%E7%88%86%E6%89%80%E6%9C%89%E6%B0%94%E7%90%83)
-* [5.BestTimeToBuyAndSellStock(买卖股票的最佳时期)]()
+* [4.MinimumNumberOfArrowsToBurstBalloons(最少的箭引爆所有气球)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/greedyAlgorithm.md#4minimumnumberofarrowstoburstballoons%E6%9C%80%E5%B0%91%E7%9A%84%E7%AE%AD%E5%BC%95%E7%88%86%E6%89%80%E6%9C%89%E6%B0%94%E7%90%83)
+* [5.BestTimeToBuyAndSellStock(买卖股票的最佳时期)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/greedyAlgorithm.md#5besttimetobuyandsellstock%E4%B9%B0%E5%8D%96%E8%82%A1%E7%A5%A8%E7%9A%84%E6%9C%80%E4%BD%B3%E6%97%B6%E6%9C%9F)
+* [6.BestTimeToBuyAndSellStock ii (买卖股票的最佳时期 2)]()
 
 ## 1.AssignCookies(饼干分配问题)
 问题描述：[LeedCode](https://leetcode-cn.com/problems/assign-cookies/)  
@@ -218,4 +219,35 @@ public class BestTimeToBuyAndSellStock {
     }
 }
 
+```
+## 6.BestTimeToBuyAndSellStock ii (买卖股票的最佳时期 2)
+问题描述：[LeedCode](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/description/)   
+解决代码：
+``` java
+/**
+ * 贪心算法
+ * leetcode:https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/description/
+ * 买卖股票的最佳时期2
+ * */
+public class BestTimeToBuyAndSellStock2 {
+    public int maxProfit(int[] prices) {
+        int maxP = 0;
+        int n = prices.length;
+        for(int i = 1; i < n;i++){
+            if(prices[i]>prices[i-1]){
+                maxP += prices[i] -prices[i-1];
+            }
+        }
+        return maxP;
+    }
+    /**
+     * 测试
+     * */
+    public static void main(String[] args){
+        int[] p = {1,2,7,3,5,2,6,7};
+        BestTimeToBuyAndSellStock2 bttbass = new BestTimeToBuyAndSellStock2();
+        int result = bttbass.maxProfit(p);
+        System.out.println("最大的收益："+result);
+    }
+}
 ```
