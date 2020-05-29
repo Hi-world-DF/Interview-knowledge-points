@@ -21,6 +21,10 @@
 * [4.MinimumNumberOfArrowsToBurstBalloons最少的箭引爆所有气球](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/greedyAlgorithm.md#4minimumnumberofarrowstoburstballoons%E6%9C%80%E5%B0%91%E7%9A%84%E7%AE%AD%E5%BC%95%E7%88%86%E6%89%80%E6%9C%89%E6%B0%94%E7%90%83)
 * [5.BestTimeToBuyAndSellStock(买卖股票的最佳时期)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/greedyAlgorithm.md#5besttimetobuyandsellstock%E4%B9%B0%E5%8D%96%E8%82%A1%E7%A5%A8%E7%9A%84%E6%9C%80%E4%BD%B3%E6%97%B6%E6%9C%9F)
 * [6.BestTimeToBuyAndSellStock ii (买卖股票的最佳时期 2)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/greedyAlgorithm.md#6besttimetobuyandsellstock-ii-%E4%B9%B0%E5%8D%96%E8%82%A1%E7%A5%A8%E7%9A%84%E6%9C%80%E4%BD%B3%E6%97%B6%E6%9C%9F-2)
+* [7.CanPlaceFlowers (能否再种下n朵花)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/greedyAlgorithm.md#7canplaceflowers-%E8%83%BD%E5%90%A6%E5%86%8D%E7%A7%8D%E4%B8%8Bn%E6%9C%B5%E8%8A%B1)
+* [8.IsSubsequence (判断子序列)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/greedyAlgorithm.md#8issubsequence-%E5%88%A4%E6%96%AD%E5%AD%90%E5%BA%8F%E5%88%97)
+* [9.NonDecreasingArray (非递减序列)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/greedyAlgorithm.md#9nondecreasingarray-%E9%9D%9E%E9%80%92%E5%87%8F%E5%BA%8F%E5%88%97)
+* [10.MaximumSubarray (最大子序列和)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/greedyAlgorithm.md#10maximumsubarray-%E6%9C%80%E5%A4%A7%E5%AD%90%E5%BA%8F%E5%88%97%E5%92%8C)
 
 ## 4.二分查找
 * [1.求开方]()
