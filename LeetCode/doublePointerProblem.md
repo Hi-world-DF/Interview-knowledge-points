@@ -253,10 +253,97 @@ public class MergeSortedArray {
 问题描述：[LeedCode](https://leetcode-cn.com/problems/linked-list-cycle/)  
 代码：
 ``` java
+/**
+ * 双指针问题
+ * leetcode:https://leetcode-cn.com/problems/linked-list-cycle/
+ * 判断链表是否存在环
+ * */
+//Definition for singly-linked list.
+class ListNode {
+    int val;
+    ListNode next;
+    ListNode(int x) {
+        val = x;
+        next = null;
+    }
+}
+public class LinkedListCycle {
+    public boolean hasCycle(ListNode head) {
+        if(head == null){
+            return false;
+        }
+        ListNode index1 = head;
+        ListNode index2 = head.next;
+        while(index1 != null && index2 != null && index2.next != null){
+            if(index1 == index2){
+                return true;
+            }
+            index1 = index1.next;
+            index2 = index2.next.next;
+        }
+        return false;
+    }
+    /**
+     * 测试
+     * */
+    public static void main(String[] args){
+        int[] a={2,3,0,-4};
+        ListNode head = new ListNode(a[0]);
+        LinkedListCycle linkedListCycle = new LinkedListCycle();
+        boolean result = linkedListCycle.hasCycle(head);
+        System.out.println(result);
+    }
+}
 ```
 
 ## 7.LongestWordInDictionaryThroughDeleting(最长子序列)
 问题描述：[LeedCode](https://leetcode-cn.com/problems/longest-word-in-dictionary-through-deleting/)  
 代码：
 ``` java
+/**
+ * 双指针问题
+ * leetcode:https://leetcode-cn.com/problems/longest-word-in-dictionary-through-deleting/
+ * 最长子序列
+ * */
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class LongestWordInDictionaryThroughDeleting {
+    public String findLongestWord(String s, List<String> d) {
+        String longestWord = "";
+        for(String target : d){
+            int length1 = longestWord.length();
+            int length2 = target.length();
+            if(length1>length2 || (length1 == length2 && longestWord.compareTo(target) < 0)){
+                continue;
+            }
+            if(isSubstring(s,target)){
+                longestWord = target;
+            }
+        }
+        return longestWord;
+    }
+    private boolean isSubstring(String s,String target){
+        int i = 0;
+        int j = 0;
+        while(i < s.length() && j < target.length()){
+            if(s.charAt(i)==target.charAt(j)){
+                j++;
+            }
+            i++;
+        }
+        return j==target.length();
+    }
+    /**
+     * 测试
+     * */
+    public static void main(String[] args){
+        LongestWordInDictionaryThroughDeleting lw = new LongestWordInDictionaryThroughDeleting();
+        String s = "abpcplea";
+        List<String> d = Arrays.asList("ale", "apple", "monkey", "plea");
+        String result = lw.findLongestWord(s,d);
+        System.out.println(result);
+    }
+}
 ```
