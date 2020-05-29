@@ -298,13 +298,95 @@ public class CanPlaceFlowers {
 问题描述：[LeedCode](https://leetcode-cn.com/problems/is-subsequence/)   
 解决代码：
 ``` java
-
+/**
+ * 贪心算法
+ * leetcode:https://leetcode-cn.com/problems/is-subsequence/
+ * 判断是否是子序列
+ * */
+public class IsSubsequence {
+    public static boolean isSubsequence(String s,String t) {
+//        int si = s.length();
+//        int ti = t.length();
+//        for (int i = 1, j = 1; i < ti && j <= si;) {
+//            if (t.charAt(i) == s.charAt(j)) {
+//                j++;
+//            }
+//            i++;
+//            if (j > si) {
+//                return true;
+//            }
+//        }
+//        return false;
+        int index = -1;
+        /**循环比较s中的字符
+         *s.toCharArray()将s字符串转换为字符数组
+         */
+        for(char c : s.toCharArray()){
+            /**
+             * 没找到，返回-1
+             * 1.int indexOf(String str):
+             *      返回第一次出现的指定子字符串在此字符串中的索引
+             * 2.int indexOf(String str, int startIndex):
+             *      从指定的索引处开始，返回第一次出现的指定子字符串在此字符串中的索引
+             * 3.int lastIndexOf(String str):
+             *      返回在此字符串中最右边出现的指定子字符串的索引
+             * 4.int lastIndexOf(String str, int startIndex):
+             *      从指定的索引处开始向后搜索，返回在此字符串中最后一次出现的指定子字符串的索引
+             * */
+            index = t.indexOf(c,index+1);
+            if(index == -1){
+                return false;
+            }
+        }
+        return true;
+    }
+    public static void main(String[] args){
+        String s = "abc";
+        String t = "ahbgc";
+        boolean result = IsSubsequence.isSubsequence(s,t);
+        System.out.println(result);
+    }
+}
 ```
 
 ## 9.NonDecreasingArray (非递减序列)
 问题描述：[LeedCode](https://leetcode-cn.com/problems/non-decreasing-array/)   
 解决代码：
 ``` java
+/**
+ * 贪心算法
+ * leetcode:https://leetcode-cn.com/problems/non-decreasing-array/
+ * 非递减序列
+ * */
+public class NonDecreasingArray {
+    public boolean hasDecreasingArray(int[] nums){
+        int n = nums.length;
+        //a用来计数，只能修改 1 个数使的数组变为非递减
+        int a = 0;
+        for (int i = 1;i < n;i++){
+            if(nums[i] >= nums[i-1]){
+                continue;
+            }
+            a++;
+            if(i-2>=0 && nums[i-2]>nums[i]){
+                nums[i]=nums[i-1];
+            }else{
+                nums[i-1]=nums[i];
+            }
+        }
+        //当不需要改数字或者只需改一次，则为true，否则为false
+        return a<=1;
+    }
+    /**
+     * 测试
+     * */
+    public static void main(String[] args){
+        int[] nums ={1,1,1};
+        NonDecreasingArray nonDecreasingArray = new NonDecreasingArray();
+        boolean result = nonDecreasingArray.hasDecreasingArray(nums);
+        System.out.println(result);
+    }
+}
 
 ```
 
@@ -312,5 +394,33 @@ public class CanPlaceFlowers {
 问题描述：[LeedCode](https://leetcode-cn.com/problems/maximum-subarray/)   
 解决代码：
 ``` java
-
+/**
+ * 贪心算法
+ * leetcode:https://leetcode-cn.com/problems/maximum-subarray/description/
+ * 子数组最大和
+ * */
+public class MaximumSubarray {
+    public int maximumSubarray(int[] nums){
+        int n = nums.length;
+        if(n == 0 || nums ==null){
+            return 0;
+        }
+        int preIndex = nums[0];
+        int maxSum = preIndex;
+        for(int i = 1;i < n;i++){
+            preIndex = preIndex>0?preIndex+nums[i]:nums[i];
+            maxSum = maxSum > preIndex?maxSum:preIndex;
+        }
+        return maxSum;
+    }
+    /**
+     * 测试
+     * */
+    public static void main(String[] args){
+        int[] nums = {-2,1,-3,4,-1,2,1,-5,4};
+        MaximumSubarray m = new MaximumSubarray();
+        int result = m.maximumSubarray(nums);
+        System.out.println(result);
+    }
+}
 ```
