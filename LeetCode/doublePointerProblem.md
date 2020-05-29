@@ -193,6 +193,22 @@ public class ValidPalindrome {
         boolean result = validPalindrome.validPalindrome(s);
         System.out.println(result);
     }
-
 }
+```
+## 5.ValidPalindrome(回文字符串)
+问题描述：[LeedCode](https://leetcode-cn.com/problems/valid-palindrome-ii/)  
+代码：
+``` java
+```
+
+## 6.ValidPalindrome(回文字符串)
+问题描述：[LeedCode](https://leetcode-cn.com/problems/valid-palindrome-ii/)  
+代码：
+``` java
+```
+
+## 7.ValidPalindrome(回文字符串)
+问题描述：[LeedCode](https://leetcode-cn.com/problems/valid-palindrome-ii/)  
+代码：
+``` java
 ```
