@@ -253,7 +253,7 @@ public class BestTimeToBuyAndSellStock2 {
 ```
 
 ## 7.CanPlaceFlowers (能否再种下n朵花)
-问题描述：[LeedCode](https://leetcode-cn.com/problems/can-place-flowers/) 
+问题描述：[LeedCode](https://leetcode-cn.com/problems/can-place-flowers/)    
 解决代码：
 ``` java
 /**
@@ -291,22 +291,22 @@ public class CanPlaceFlowers {
 }
 
 ```
-## 8.BestTimeToBuyAndSellStock ii (买卖股票的最佳时期 2)
-问题描述：[LeedCode](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/description/)   
+## 8.IsSubsequence (判断子序列)
+问题描述：[LeedCode](https://leetcode-cn.com/problems/is-subsequence/)   
 解决代码：
 ``` java
 
 ```
 
-## 9.BestTimeToBuyAndSellStock ii (买卖股票的最佳时期 2)
-问题描述：[LeedCode](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/description/)   
+## 9.NonDecreasingArray (非递减序列)
+问题描述：[LeedCode](https://leetcode-cn.com/problems/non-decreasing-array/)   
 解决代码：
 ``` java
 
 ```
 
-## 10.BestTimeToBuyAndSellStock ii (买卖股票的最佳时期 2)
-问题描述：[LeedCode](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/description/)   
+## 10.MaximumSubarray (最大子序列和)
+问题描述：[LeedCode](https://leetcode-cn.com/problems/maximum-subarray/)   
 解决代码：
 ``` java
 
