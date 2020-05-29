@@ -3,6 +3,9 @@
 * [2.SumOfSquareNumbers(两数平方和)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/doublePointerProblem.md#2sumofsquarenumbers%E4%B8%A4%E6%95%B0%E5%B9%B3%E6%96%B9%E5%92%8C)
 * [3.ReverseVowelsOfString(反转字符串中的元音字符)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/doublePointerProblem.md#3reversevowelsofstring%E5%8F%8D%E8%BD%AC%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E7%9A%84%E5%85%83%E9%9F%B3%E5%AD%97%E7%AC%A6)
 * [4.ValidPalindrome(回文字符串)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/doublePointerProblem.md#4validpalindrome%E5%9B%9E%E6%96%87%E5%AD%97%E7%AC%A6%E4%B8%B2)
+* []()
+* []()
+* []()
 
 ## 1.TwoNumSum(有序数组的两数相加)
 问题描述：[LeedCode](https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/)  
@@ -195,20 +198,20 @@ public class ValidPalindrome {
     }
 }
 ```
-## 5.ValidPalindrome(回文字符串)
-问题描述：[LeedCode](https://leetcode-cn.com/problems/valid-palindrome-ii/)  
+## 5.MergeSortedArray(归并两个有序数组)
+问题描述：[LeedCode](https://leetcode-cn.com/problems/merge-sorted-array/)  
 代码：
 ``` java
 ```
 
-## 6.ValidPalindrome(回文字符串)
-问题描述：[LeedCode](https://leetcode-cn.com/problems/valid-palindrome-ii/)  
+## 6.LinkedListCycle(判断链表是否存在环)
+问题描述：[LeedCode](https://leetcode-cn.com/problems/linked-list-cycle/)  
 代码：
 ``` java
 ```
 
-## 7.ValidPalindrome(回文字符串)
-问题描述：[LeedCode](https://leetcode-cn.com/problems/valid-palindrome-ii/)  
+## 7.LongestWordInDictionaryThroughDeleting(最长子序列)
+问题描述：[LeedCode](https://leetcode-cn.com/problems/longest-word-in-dictionary-through-deleting/)  
 代码：
 ``` java
 ```
