@@ -3,9 +3,9 @@
 * [2.SumOfSquareNumbers(两数平方和)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/doublePointerProblem.md#2sumofsquarenumbers%E4%B8%A4%E6%95%B0%E5%B9%B3%E6%96%B9%E5%92%8C)
 * [3.ReverseVowelsOfString(反转字符串中的元音字符)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/doublePointerProblem.md#3reversevowelsofstring%E5%8F%8D%E8%BD%AC%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E7%9A%84%E5%85%83%E9%9F%B3%E5%AD%97%E7%AC%A6)
 * [4.ValidPalindrome(回文字符串)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/doublePointerProblem.md#4validpalindrome%E5%9B%9E%E6%96%87%E5%AD%97%E7%AC%A6%E4%B8%B2)
-* []()
-* []()
-* []()
+* [5.MergeSortedArray(归并两个有序数组)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/doublePointerProblem.md#5mergesortedarray%E5%BD%92%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84)
+* [6.LinkedListCycle(判断链表是否存在环)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/doublePointerProblem.md#6linkedlistcycle%E5%88%A4%E6%96%AD%E9%93%BE%E8%A1%A8%E6%98%AF%E5%90%A6%E5%AD%98%E5%9C%A8%E7%8E%AF)
+* [7.LongestWordInDictionaryThroughDeleting(最长子序列)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/doublePointerProblem.md#7longestwordindictionarythroughdeleting%E6%9C%80%E9%95%BF%E5%AD%90%E5%BA%8F%E5%88%97)
 
 ## 1.TwoNumSum(有序数组的两数相加)
 问题描述：[LeedCode](https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/)  
