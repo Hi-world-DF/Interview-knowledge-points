@@ -1,5 +1,5 @@
 # 二分查找
-* [1. SqrtX（求开方）]()
+* [1. SqrtX（求开方）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/binarySearch.md#1-sqrtx%E6%B1%82%E5%BC%80%E6%96%B9)
 
 
 ## 1. SqrtX(求开方)
