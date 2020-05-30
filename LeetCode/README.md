@@ -30,5 +30,5 @@
 * [10. MaximumSubarray (最大子序列和)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/greedyAlgorithm.md#10maximumsubarray-%E6%9C%80%E5%A4%A7%E5%AD%90%E5%BA%8F%E5%88%97%E5%92%8C)
 
 ## 4.二分查找
-* [1. 求开方]()
+* [1. 求开方](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/binarySearch.md#1-sqrtx%E6%B1%82%E5%BC%80%E6%96%B9)
 
