@@ -2,6 +2,7 @@
 * [1. SqrtX（求开方）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/binarySearch.md#1-sqrtx%E6%B1%82%E5%BC%80%E6%96%B9)
 * [2.FindSmallestLetterGreaterThanTarget(寻找比目标字母大的最小字母)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/binarySearch.md#2findsmallestlettergreaterthantarget%E5%AF%BB%E6%89%BE%E6%AF%94%E7%9B%AE%E6%A0%87%E5%AD%97%E6%AF%8D%E5%A4%A7%E7%9A%84%E6%9C%80%E5%B0%8F%E5%AD%97%E6%AF%8D)
 * [3.SingleElementInASortedArray(有序数组中的单一元素)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/binarySearch.md#3singleelementinasortedarray%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E5%8D%95%E4%B8%80%E5%85%83%E7%B4%A0)
+* [4.FirstBadVersion(第一个错误版本)]()
 
 ## 1. SqrtX(求开方)
 问题描述：[LeedCode](https://leetcode-cn.com/problems/sqrtx/description/)   
@@ -143,6 +144,35 @@ public class SingleElementInASortedArray {
         int[] nums = {1,1,2,3,3,4,4,8,8};
         int result = s.singleNonDuplicate(nums);
         System.out.println(result);
+    }
+}
+```
+## 4.FirstBadVersion(第一个错误版本)
+问题描述：[LeedCode](https://leetcode-cn.com/problems/first-bad-version/description/)   
+解决代码：
+``` java
+/**
+ * 二分查找
+ * leetcode:https://leetcode-cn.com/problems/first-bad-version/description/
+ * 第一个错误版本
+ * */
+public class FirstBadVersion extends VersionControl{
+    public int firstBadVersion(int n){
+        int first = 1;
+        int last = n;
+        while(first < last){
+            /**
+             * 不要写(first+last)/2
+             * 注意：二分的边界
+             * */
+            int mid = first+(last-first)/2;
+            if(isBadVersion(mid)){
+                last = mid;
+            }else{
+                first = mid+1;
+            }
+        }
+        return first;
     }
 }
 ```
