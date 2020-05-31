@@ -33,4 +33,5 @@
 * [1. SqrtX（求开方）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/binarySearch.md#1-sqrtx%E6%B1%82%E5%BC%80%E6%96%B9)
 * [2.FindSmallestLetterGreaterThanTarget(寻找比目标字母大的最小字母)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/binarySearch.md#2findsmallestlettergreaterthantarget%E5%AF%BB%E6%89%BE%E6%AF%94%E7%9B%AE%E6%A0%87%E5%AD%97%E6%AF%8D%E5%A4%A7%E7%9A%84%E6%9C%80%E5%B0%8F%E5%AD%97%E6%AF%8D)
 * [3.SingleElementInASortedArray(有序数组中的单一元素)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/binarySearch.md#3singleelementinasortedarray%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E5%8D%95%E4%B8%80%E5%85%83%E7%B4%A0)
+* [4.FirstBadVersion(第一个错误版本)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/binarySearch.md#4firstbadversion%E7%AC%AC%E4%B8%80%E4%B8%AA%E9%94%99%E8%AF%AF%E7%89%88%E6%9C%AC)
 
