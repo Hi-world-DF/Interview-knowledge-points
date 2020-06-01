@@ -28,7 +28,7 @@ volatile是Java虚拟机提供的**轻量级的同步机制**,它的特点有三
 ## 1.3 指令重排
 #### 1.3.1 什么是指令重排？
 * 计算机运行某个程序，程序的运行时按指令运行，为了提高效率，编译器通常会对指令做重排一般分为以下三种:  
-![](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/Concurrent/imgs/recode.png)
+![InstructionRearrangement](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/Concurrent/imgs/recode.png)
 #### 1.3.2 什么情况下会指令重排？
 * (1)**单线程环境**，确保程序的最终执行结果和代码顺序执行的结果一致；
 * (2)处理器在进行指令重排时必须考虑指令之间的**数据依赖性**，当无数据依赖时可进行指令重排；
