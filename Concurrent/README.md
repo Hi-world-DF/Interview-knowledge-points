@@ -1,9 +1,9 @@
 # Java并发编程
 这一章关于一些多线程并发问题的解决，以及设计的一些同步技术的总结，大多为面试重要考点。
-* [volatile]()
-* [CAS]()
-* [ABA问题]()
-# volatile
+* [volatile](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/Concurrent/README.md#volatile)
+* [CAS](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/Concurrent/README.md#cas)
+* [ABA问题](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/Concurrent/README.md#aba%E9%97%AE%E9%A2%98)
+# 1. volatile
 volatile是Java虚拟机提供的**轻量级的同步机制**,它的特点有三点：
 * 保证**可见性**
 * 不保证**原子性**
@@ -16,6 +16,6 @@ volatile是Java虚拟机提供的**轻量级的同步机制**,它的特点有三
 > 证明volatile的可见性：  
 > (1)代码中不用volatile修饰，用Thread1去修改主内存中共享变量的值，但Thread2不知道已修改；  
 > (2)使用volatile修饰，线程1修改后，线程2获取的值即为修改后的值。  
-# CAS
+# 2. CAS
 
-# ABA问题
+# 3. ABA问题
