@@ -3,7 +3,8 @@
 * [volatile](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/Concurrent/README.md#1-volatile)
 * [CAS](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/Concurrent/README.md#2-cas)
 * [ABA问题](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/Concurrent/README.md#3-aba%E9%97%AE%E9%A2%98)
-# 1. volatile
+## 1. volatile
+****************
 volatile是Java虚拟机提供的**轻量级的同步机制**,它的特点有三点：
 * 保证**可见性**
 * 不保证**原子性**
@@ -17,7 +18,7 @@ volatile是Java虚拟机提供的**轻量级的同步机制**,它的特点有三
 * (1)代码中不用volatile修饰，用Thread1去修改主内存中共享变量的值，但Thread2不知道已修改；  
 * (2)使用volatile修饰，线程1修改后，线程2获取的值即为修改后的值。  
 
-## 1.2 原子性
+### 1.2 原子性
 #### 1.2.1 什么是原子性？
 * 简单的讲：不可分割，完整性的操作集合。也就是说这些原子操作要么全执行成功，要么全部失败。
 * volatile不保证原子性。
@@ -25,7 +26,7 @@ volatile是Java虚拟机提供的**轻量级的同步机制**,它的特点有三
 * 加synchronized（重量级锁）修饰，若只是解决num++;问题有点大材小用。
 * 用Atomic-->AtomicInteger来解决num++;原子性问题。
 
-## 1.3 指令重排
+### 1.3 指令重排
 #### 1.3.1 什么是指令重排？
 * 计算机运行某个程序，程序的运行时按指令运行，为了提高效率，编译器通常会对指令做重排一般分为以下三种:  
 ![InstructionRearrangement](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/Concurrent/imgs/recode.png)
@@ -33,6 +34,8 @@ volatile是Java虚拟机提供的**轻量级的同步机制**,它的特点有三
 * (1)**单线程环境**，确保程序的最终执行结果和代码顺序执行的结果一致；
 * (2)处理器在进行指令重排时必须考虑指令之间的**数据依赖性**，当无数据依赖时可进行指令重排；
 * (3)**多线程环境下**，线程交替执行，因编译器优化重排的存在，两个线程使用的变量是否能保证一致性无法确定的，结果无法预判，故有时需要**禁止指令重排**。
-# 2. CAS
+## 2. CAS
+****************
 
-# 3. ABA问题
+## 3. ABA问题
+****************
