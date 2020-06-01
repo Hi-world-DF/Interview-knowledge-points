@@ -1,11 +1,14 @@
 # Java并发编程
-这一章关于一些多线程并发问题的解决，以及设计的一些同步技术的总结，大多为面试重要考点
-## 1. volatile
+这一章关于一些多线程并发问题的解决，以及设计的一些同步技术的总结，大多为面试重要考点。
+* [volatile]()
+* [CAS]()
+* [ABA问题]()
+# volatile
 volatile是Java虚拟机提供的**轻量级的同步机制**,它的特点有三点：
 * 保证**可见性**
 * 不保证**原子性**
 * **禁止指令重排**
-### 1.1 可见性
+## 1.1 可见性
 #### 1.1.1 什么是可见性？
 * JMM(Java内存模型)  
 ![JMM](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/Concurrent/imgs/JMM.png)  
@@ -13,6 +16,6 @@ volatile是Java虚拟机提供的**轻量级的同步机制**,它的特点有三
 > 证明volatile的可见性：  
 > (1)代码中不用volatile修饰，用Thread1去修改主内存中共享变量的值，但Thread2不知道已修改；  
 > (2)使用volatile修饰，线程1修改后，线程2获取的值即为修改后的值。  
-## 2. CAS
+# CAS
 
-## 3. ABA问题
+# ABA问题
