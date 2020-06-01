@@ -4,12 +4,11 @@
 * [CAS](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/Concurrent/README.md#2-cas)
 * [ABA问题](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/Concurrent/README.md#3-aba%E9%97%AE%E9%A2%98)
 ## 1. volatile
-****************
 volatile是Java虚拟机提供的**轻量级的同步机制**,它的特点有三点：
 * 保证**可见性**
 * 不保证**原子性**
 * **禁止指令重排**
-## 1.1 可见性
+### 1.1 可见性
 #### 1.1.1 什么可见性？
 * 先讲讲JMM(Java内存模型)  
 ![JMM](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/Concurrent/imgs/JMM.png)  
@@ -35,7 +34,7 @@ volatile是Java虚拟机提供的**轻量级的同步机制**,它的特点有三
 * (2)处理器在进行指令重排时必须考虑指令之间的**数据依赖性**，当无数据依赖时可进行指令重排；
 * (3)**多线程环境下**，线程交替执行，因编译器优化重排的存在，两个线程使用的变量是否能保证一致性无法确定的，结果无法预判，故有时需要**禁止指令重排**。
 ## 2. CAS
-****************
+
 
 ## 3. ABA问题
-****************
+
