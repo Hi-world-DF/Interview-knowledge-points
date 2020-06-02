@@ -3,7 +3,7 @@
 * [2.FindSmallestLetterGreaterThanTarget(寻找比目标字母大的最小字母)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/binarySearch.md#2findsmallestlettergreaterthantarget%E5%AF%BB%E6%89%BE%E6%AF%94%E7%9B%AE%E6%A0%87%E5%AD%97%E6%AF%8D%E5%A4%A7%E7%9A%84%E6%9C%80%E5%B0%8F%E5%AD%97%E6%AF%8D)
 * [3.SingleElementInASortedArray(有序数组中的单一元素)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/binarySearch.md#3singleelementinasortedarray%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E5%8D%95%E4%B8%80%E5%85%83%E7%B4%A0)
 * [4.FirstBadVersion(第一个错误版本)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/binarySearch.md#4firstbadversion%E7%AC%AC%E4%B8%80%E4%B8%AA%E9%94%99%E8%AF%AF%E7%89%88%E6%9C%AC)
-
+* [5.FindMinimumInRotatedSortedArray(寻找旋转排序数组中的最小值)]()
 ## 1. SqrtX(求开方)
 问题描述：[LeedCode](https://leetcode-cn.com/problems/sqrtx/description/)   
 解决代码：
@@ -173,6 +173,43 @@ public class FirstBadVersion extends VersionControl{
             }
         }
         return first;
+    }
+}
+```
+## 5.FindMinimumInRotatedSortedArray(寻找旋转排序数组中的最小值)
+问题描述：[LeedCode](https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array/description/)   
+解决代码：
+``` java
+/**
+ * 二分查找
+ * leetcode:https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array/description/
+ * 寻找旋转排序数组中的最小值
+ * */
+public class FindMinimumInRotatedSortedArray {
+    public int findMin(int[] nums) {
+        int first = 0;
+        int last = nums.length -1;
+        while(first < last){
+            int mid = first+(last-first)/2;
+            if(nums[mid] <= nums[last]){
+                last = mid;
+            }else{
+                first = mid+1;
+            }
+        }
+        return nums[first];
+    }
+    /**
+     * 测试
+     * */
+    public static void main(String[] args){
+        int[] nums1 = {3,4,5,1,2};
+        int[] nums2 = {4,5,6,7,0,1,2};
+        FindMinimumInRotatedSortedArray nums = new FindMinimumInRotatedSortedArray();
+        int result1 = nums.findMin(nums1);
+        int result2 = nums.findMin(nums2);
+        System.out.println(result1);
+        System.out.println(result2);
     }
 }
 ```
