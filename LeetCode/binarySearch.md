@@ -4,6 +4,7 @@
 * [3.SingleElementInASortedArray(有序数组中的单一元素)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/binarySearch.md#3singleelementinasortedarray%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E5%8D%95%E4%B8%80%E5%85%83%E7%B4%A0)
 * [4.FirstBadVersion(第一个错误版本)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/binarySearch.md#4firstbadversion%E7%AC%AC%E4%B8%80%E4%B8%AA%E9%94%99%E8%AF%AF%E7%89%88%E6%9C%AC)
 * [5.FindMinimumInRotatedSortedArray(寻找旋转排序数组中的最小值)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/binarySearch.md#5findminimuminrotatedsortedarray%E5%AF%BB%E6%89%BE%E6%97%8B%E8%BD%AC%E6%8E%92%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E6%9C%80%E5%B0%8F%E5%80%BC)
+* [6.FindFirstAndLastPositionOfElementInSortedArray(在排序数组中查找元素的第一个和最后一个位置)]()
 ## 1. SqrtX(求开方)
 问题描述：[LeedCode](https://leetcode-cn.com/problems/sqrtx/description/)   
 解决代码：
@@ -210,6 +211,59 @@ public class FindMinimumInRotatedSortedArray {
         int result2 = nums.findMin(nums2);
         System.out.println(result1);
         System.out.println(result2);
+    }
+}
+```
+
+## 6.FindFirstAndLastPositionOfElementInSortedArray(在排序数组中查找元素的第一个和最后一个位置)
+问题描述：[LeedCode](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/)   
+解决代码：
+``` java
+import java.util.Scanner;
+/**
+ * 二分查找
+ * leetcode:https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/
+ * 在排序数组中查找元素的第一个和最后一个位置
+ * */
+public class FindFirstAndLastPositionOfElementInSortedArray {
+    public int[] searchRange(int[] nums, int target) {
+        int first = findFirst(nums, target);
+        //最后一个位置肯定在比target临近大一点的数的前一个位置
+        int last = findFirst(nums, target + 1) - 1;
+        if (first == nums.length || nums[first] != target) {
+            //没有的话就返回[-1,-1]
+            return new int[]{-1, -1};
+        } else {
+            return new int[]{first, Math.max(first, last)};
+        }
+    }
+    /**
+     * 二分查找
+     * */
+    private int findFirst(int[] nums, int target) {
+        int first = 0, last = nums.length;
+        while (first < last) {
+            int mid = first + (last - first) / 2;
+            if (nums[mid] >= target) {
+                last = mid;
+            } else {
+                first = mid + 1;
+            }
+        }
+        return first;
+    }
+    /**
+     * 测试
+     * */
+    public static void main(String[] args){
+        Scanner in = new Scanner(System.in);
+        FindFirstAndLastPositionOfElementInSortedArray findFAL = new FindFirstAndLastPositionOfElementInSortedArray();
+        int[] nums = {2,2};
+        int target = in.nextInt();
+        int[] result = findFAL.searchRange(nums,target);
+        for(int i = 0;i < result.length;i++){
+            System.out.print(result[i]+" ");
+        }
     }
 }
 ```
