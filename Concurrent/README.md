@@ -2,7 +2,7 @@
 这一章关于一些多线程并发问题的解决，以及设计的一些同步技术的总结，大多为面试重要考点。
 * [volatile](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/Concurrent/README.md#1-volatile)
 * [CAS](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/Concurrent/README.md#2-cas)
-* [ABA问题](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/Concurrent/README.md#3-aba%E9%97%AE%E9%A2%98)
+* [集合类并发安全问题](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/Concurrent/README.md#3-aba%E9%97%AE%E9%A2%98)
 ## 1. volatile
 volatile是Java虚拟机提供的**轻量级的同步机制**,它的特点有三点：
 * 保证**可见性**
@@ -46,6 +46,14 @@ volatile是Java虚拟机提供的**轻量级的同步机制**,它的特点有三
 * 1)unsafe类是CAS的核心类，由于Java无法直接访问底层系统，需要通过本地方法(native修饰)来访问，unsafe类相当于一个后门，基于该类可以直接操作特定内存的数据（unsafe类基本所有方法都是native修饰的，即unsaf类中的方法都直接调用操作系统底层资源执行相应的任务）。
 * 2)变量valueoffset，表示该变量值在内存中的偏移地址，因为unsafe是通过偏移地址来获取数据的。
 * 3)变量value用volatile修饰，保证多线程之间的内存可见性。
+### 2.2 自旋锁
 
-## 3. ABA问题
-
+### 2.3 CAS的缺点
+* (1)循环时间长，cpu开销大(因为自旋锁)
+* (2)只能保证一个共享变量的原子操作
+* (3)ABA问题
+### 2.4 ABA问题
+#### 2.4.1 什么是ABA问题
+尽管线程A和B都可以进行CAS操作成功，但不代表这个过程就没有问题，有一种情况，在线程A操作过程中，可能线程B
+#### 2.4.2 解决ABA问题
+## 3. 集合类并发安全问题
