@@ -40,12 +40,12 @@ volatile是Java虚拟机提供的**轻量级的同步机制**,它的特点有三
 > (2)由于指令重排，可能当一个线程访问instance不为null时，由于instance实例未必完成了初始化，这样就会产生线程不安全问题。                
 ## 2. CAS
 **CAS**指比较和交换，`atomicInteger.compareAndSet(expect,update);` 若expect和主内存的变量值相同，则将值更新为update,否则返回false。**底层原理**是：  
-* **自旋锁
-* **unsafe类
+* **自旋锁**
+* **unsafe类**
 ### 2.1 unsafe类
-* 1.unsafe类是CAS的核心类，由于Java无法直接访问底层系统，需要通过本地方法(native修饰)来访问，unsafe类相当于一个后门，基于该类可以直接操作特定内存的数据（unsafe类基本所有方法都是native修饰的，即unsaf类中的方法都直接调用操作系统底层资源执行相应的任务）。
-* 2.变量valueoffset，表示该变量值在内存中的偏移地址，因为unsafe是通过偏移地址来获取数据的。
-* 3.变量value用volatile修饰，保证多线程之间的内存可见性。
+* 1)unsafe类是CAS的核心类，由于Java无法直接访问底层系统，需要通过本地方法(native修饰)来访问，unsafe类相当于一个后门，基于该类可以直接操作特定内存的数据（unsafe类基本所有方法都是native修饰的，即unsaf类中的方法都直接调用操作系统底层资源执行相应的任务）。
+* 2)变量valueoffset，表示该变量值在内存中的偏移地址，因为unsafe是通过偏移地址来获取数据的。
+* 3)变量value用volatile修饰，保证多线程之间的内存可见性。
 
 ## 3. ABA问题
 
