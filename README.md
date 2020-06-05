@@ -11,4 +11,4 @@
 ### 3.[贪心算法](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/README.md#3%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95)
 ### 4.[二分查找](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/README.md#4%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE)
 ### 5.[分治算法](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/README.md#5%E5%88%86%E6%B2%BB%E7%AE%97%E6%B3%95)
-### 6.[搜索算法]()
+### 6.[搜索算法](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/README.md#6%E6%90%9C%E7%B4%A2%E7%AE%97%E6%B3%95)
