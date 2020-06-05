@@ -1,7 +1,7 @@
 # 搜索算法
 * [BFS(广度优先算法)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/searchAlgorithm.md#%E4%B8%80bfs)
-  * [1. ShortestPathBinaryMatrix（二进制矩阵中的最短路径）]()
-* []()
+  * [1. ShortestPathBinaryMatrix（二进制矩阵中的最短路径）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/searchAlgorithm.md#1-shortestpathbinarymatrix%E4%BA%8C%E8%BF%9B%E5%88%B6%E7%9F%A9%E9%98%B5%E4%B8%AD%E7%9A%84%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84)
+* [DFS(深度优先算法)]()
 
 # 一、BFS
 ## 1. ShortestPathBinaryMatrix（二进制矩阵中的最短路径）
@@ -65,3 +65,5 @@ public class ShortestPathInBinaryMatrix {
     }
 }
 ```
+
+# 二、DFS
