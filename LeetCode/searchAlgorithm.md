@@ -1,5 +1,5 @@
 # 搜索算法
-* [BFS(广度优先算法)]()
+* [BFS(广度优先算法)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/searchAlgorithm.md#%E4%B8%80bfs)
   * [1. ShortestPathBinaryMatrix（二进制矩阵中的最短路径）]()
 * []()
 
