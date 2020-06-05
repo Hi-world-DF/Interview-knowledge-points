@@ -3,6 +3,7 @@
   * [1. ShortestPathBinaryMatrix（二进制矩阵中的最短路径）]()
 * []()
 
+# 一、BFS
 ## 1. ShortestPathBinaryMatrix（二进制矩阵中的最短路径）
 问题描述：[LeedCode](https://leetcode-cn.com/problems/shortest-path-in-binary-matrix/)   
 解决代码：
