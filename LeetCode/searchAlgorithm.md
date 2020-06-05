@@ -63,6 +63,15 @@ public class ShortestPathInBinaryMatrix {
         }
         return -1;
     }
+    /**
+     * 测试
+     * */
+    public static void main(String[] args){
+        int[][] grid = {{0,0,0},{1,1,0},{1,1,0}};
+        ShortestPathInBinaryMatrix s = new ShortestPathInBinaryMatrix();
+        int result = s.shortestPathBinaryMatrix(grid);
+        System.out.println(result);
+    }
 }
 ```
 
