@@ -4,6 +4,7 @@
 * [贪心算法](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/README.md#3%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95)
 * [二分查找](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/README.md#4%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE)
 * [分治算法](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/README.md#5%E5%88%86%E6%B2%BB%E7%AE%97%E6%B3%95)
+* [搜索算法](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/README.md#5%E5%88%86%E6%B2%BB%E7%AE%97%E6%B3%95)
 ## 1.双指针问题
 * [1. TwoNumSum(有序数组的两数相加)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/doublePointerProblem.md#1twonumsum%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E7%9A%84%E4%B8%A4%E6%95%B0%E7%9B%B8%E5%8A%A0)
 * [2. SumOfSquareNumbers(两数平方和)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/doublePointerProblem.md#2sumofsquarenumbers%E4%B8%A4%E6%95%B0%E5%B9%B3%E6%96%B9%E5%92%8C)
@@ -39,3 +40,8 @@
 ## 5.分治算法
 * [1. 为运算表达式设计优先级（给表达式加括号）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/DivideAndConquer.md#1-%E4%B8%BA%E8%BF%90%E7%AE%97%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%AE%BE%E8%AE%A1%E4%BC%98%E5%85%88%E7%BA%A7%E7%BB%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%8A%A0%E6%8B%AC%E5%8F%B7)
 * [2. UniqueBinarySearchTreesII(不同的二叉搜索树 II)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/DivideAndConquer.md#2-uniquebinarysearchtreesii%E4%B8%8D%E5%90%8C%E7%9A%84%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91-ii)
+
+## 6.搜索算法
+* BFS
+
+
