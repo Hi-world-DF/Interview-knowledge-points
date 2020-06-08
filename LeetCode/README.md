@@ -7,9 +7,9 @@
 * [分治算法](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/README.md#5%E5%88%86%E6%B2%BB%E7%AE%97%E6%B3%95)
 * [搜索算法](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/README.md#6%E6%90%9C%E7%B4%A2%E7%AE%97%E6%B3%95)
 ### 数据结构
-* [链表]()
+* [链表](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/README.md#1%E9%93%BE%E8%A1%A8)
 
-# 《算法思想》
+# < 算法思想 >
 ## 1. 双指针问题
 * [1. TwoNumSum(有序数组的两数相加)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/doublePointerProblem.md#1twonumsum%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E7%9A%84%E4%B8%A4%E6%95%B0%E7%9B%B8%E5%8A%A0)
 * [2. SumOfSquareNumbers(两数平方和)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/doublePointerProblem.md#2sumofsquarenumbers%E4%B8%A4%E6%95%B0%E5%B9%B3%E6%96%B9%E5%92%8C)
@@ -51,7 +51,7 @@
   * [1. ShortestPathBinaryMatrix（二进制矩阵中的最短路径）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/searchAlgorithm.md#1-shortestpathbinarymatrix%E4%BA%8C%E8%BF%9B%E5%88%B6%E7%9F%A9%E9%98%B5%E4%B8%AD%E7%9A%84%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84)
 * [DFS(深度优先算法)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/searchAlgorithm.md#%E4%BA%8Cdfs)
 
-# 《数据结构》
+# < 数据结构 >
 
 ## 1.链表
 * [链表]
