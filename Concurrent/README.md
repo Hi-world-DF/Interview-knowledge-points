@@ -58,3 +58,13 @@ volatile是Java虚拟机提供的**轻量级的同步机制**,它的特点有三
 #### 2.4.2 解决ABA问题
 解决ABA问题-->原子引用+新机制，修改版本号（类似加时间戳），可以使用`tomicStampedReference.compareAndSet();`。
 ## 3. 集合类并发安全问题
+> ArrayList、HashMap、HashSet等
+### 3.1 不安全问题（故障）
+#### 3.1.1 故障现象
+当发生故障会报`java.util.ConcurrentModificationException`异常。
+#### 3.1.2 导致原因
+`ConcurrentModificationException`是指并发修改异常，并发争抢资源，如一个线程在进行写操作，另一个线程抢夺写操作，导致数据不一致异常，也就是所谓的并发修改异常。
+#### 3.1.3 解决方案
+* 1) 用vector<>();因为vector的add方法用`synchronized`修饰了。
+* 2) 使用Collections工具类，它提供了线程安全的集合类；比如`Collections.synchronizedList(new ArrayList<>());`,`Collections.synchronizedMap(new HashMap<>());`,`Collections.synchronizedSet(new HashSet<>());`等。
+* 3) 使用 `new CopyOnWriteArrayList<>();`或者`new CopyOnWriteArraySet<>();`,
