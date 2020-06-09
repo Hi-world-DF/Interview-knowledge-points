@@ -3,6 +3,7 @@
 * [2. MergeTwoSortedLists (合并两个有序链表)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/linkList.md#2-mergetwosortedlists-%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E9%93%BE%E8%A1%A8)
 * [3. RemoveDuplicatesFromSortedList (删除有序链表中重复元素)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/linkList.md#3-removeduplicatesfromsortedlist-%E5%88%A0%E9%99%A4%E6%9C%89%E5%BA%8F%E9%93%BE%E8%A1%A8%E4%B8%AD%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0)
 * [4. ReverseLinkedList (链表反转)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/linkList.md#4-reverselinkedlist-%E9%93%BE%E8%A1%A8%E5%8F%8D%E8%BD%AC)
+* [5. RemoveNthNodeFromEndOfList (删除链表倒数第n个节点)]()
 ## ListNode类的定义
 ``` java
 class ListNode {
@@ -126,4 +127,72 @@ public class ReverseLinkedList {
         }
 }
 ```
+## 5. RemoveNthNodeFromEndOfList (删除链表倒数第n个节点)
+问题描述：[LeedCode](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/)   
+解决代码：
+``` java
+/**
+ * 数据结构：链表
+ * leetcode：https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/
+ * 删除链表倒数第n个节点
+ * */
+public class RemoveNthNodeFromEndOfList {
+    /**
+     * 方法一：
+     * */
+    public ListNode removeNthFromEnd(ListNode head, int n) {
+        //求整个list有多少个节点，然后找到倒数第n个元素
+        ListNode length = head;
+        int l = 0;
+        while(length !=null){
+            l++;
+            length = length.next;
+        }
+        //倒数第n个元素位置
+        int nums = l-n;
+        ListNode listNode = head;
+        //如果要删除最前面的元素，那就返回head.next
+        if(nums == 0){
+            return head.next;
+        }
+        //然后找到倒数第n个位置元素
+        while(nums > 1){
+            nums--;
+            listNode= listNode.next;
+        }
+        //如果head是null那就返回null,否则就将要删除的元素的前一个元素指向它的后一个元素
+        if(head == null){
+            return null;
+        }else{
+            listNode.next = listNode.next.next;
+        }
+        return head;
+    }
+
+    /**
+     * 方法二：
+     * */
+    public ListNode removeNthFromEnd2(ListNode head, int n) {
+        //指向第n个节点
+        ListNode last = head;
+        while(n > 0){
+            last = last.next;
+            n--;
+        }
+        //指向前面的节点
+        ListNode first = head;
+        //删除第一个元素
+        if(last == null){
+            return head.next;
+        }
+        while(last.next != null){
+            last = last.next;
+            first = first.next;
+        }
+        first.next = first.next.next;
+        return head;
+    }
+}
+```
+
 
