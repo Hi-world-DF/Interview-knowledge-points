@@ -58,13 +58,27 @@ volatile是Java虚拟机提供的**轻量级的同步机制**,它的特点有三
 #### 2.4.2 解决ABA问题
 解决ABA问题-->原子引用+新机制，修改版本号（类似加时间戳），可以使用`tomicStampedReference.compareAndSet();`。
 ## 3. 集合类并发安全问题
-> ArrayList、HashMap、HashSet等
+> 线程不安全的集合类包括 ArrayList、HashMap、HashSet 等。
 ### 3.1 不安全问题（故障）
 #### 3.1.1 故障现象
 当发生故障会报`java.util.ConcurrentModificationException`异常。
 #### 3.1.2 导致原因
 `ConcurrentModificationException`是指并发修改异常，并发争抢资源，如一个线程在进行写操作，另一个线程抢夺写操作，导致数据不一致异常，也就是所谓的并发修改异常。
 #### 3.1.3 解决方案
-* 1) 用vector<>();因为vector的add方法用`synchronized`修饰了。
-* 2) 使用Collections工具类，它提供了线程安全的集合类；比如`Collections.synchronizedList(new ArrayList<>());`,`Collections.synchronizedMap(new HashMap<>());`,`Collections.synchronizedSet(new HashSet<>());`等。
-* 3) 使用 `new CopyOnWriteArrayList<>();`或者`new CopyOnWriteArraySet<>();`,
+* 1)用vector<>();因为vector的add方法用`synchronized`修饰了。
+* 2)使用Collections工具类，它提供了线程安全的集合类；比如`Collections.synchronizedList(new ArrayList<>());`,`Collections.synchronizedMap(new HashMap<>());`,`Collections.synchronizedSet(new HashSet<>());`等。
+* 3)使用 `new CopyOnWriteArrayList<>();`或者`new CopyOnWriteArraySet<>();`
+  * 底层原理实现：创建一个CopyOnWrite容器，即写时复制容器。当要往某个容器添加一个元素时，不直接往当前容器的Object[]中添加该元素，而是先复制一份，然后往复制的新容器里添加新元素，添加完成后，再将原容器的引用指向新容器。
+### 3.2 HashSet
+HashSet线程不安全，可以使用上面的解决方案，使用`CopyOnWriteArraySet`。
+HashSet底层源码是由HashMap实现的：
+```java
+HashSet hs = new HashSet<>();
+hs.add('a');
+//上面操作，底层是hashMap.put('a',常量)；由于HashSet不关心value值，故可以设置一个常量值即可。
+```
+### 3.3 HashMap
+HashMap也是线程不安全的，可使用`ConcurrentHashMap`分段锁来解决。
+ConcurrentHashMap由数组结构Segments和HashEntry数组组成。segement是一种可重入锁(ReentrantLock)，扮演锁的角色，HashEntry则用于存储键值对数据。
+![HashMap](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/Concurrent/imgs/HashMap.png)
+> Java8抛弃了segment分段锁机制，利用CAS+Synchronized来保证并发安全，数据结构采用：数组+链表+红黑树。
