@@ -79,6 +79,6 @@ hs.add('a');
 ```
 ### 3.3 HashMap
 HashMap也是线程不安全的，可使用`ConcurrentHashMap`分段锁来解决。
-ConcurrentHashMap由数组结构Segments和HashEntry数组组成。segement是一种可重入锁(ReentrantLock)，扮演锁的角色，HashEntry则用于存储键值对数据。
-![HashMap](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/Concurrent/imgs/HashMap.png)
+ConcurrentHashMap由数组结构Segments和HashEntry数组组成。segement是一种可重入锁(ReentrantLock)，扮演锁的角色，HashEntry则用于存储键值对数据。  
+![HashMap](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/Concurrent/imgs/HashMap.png)   
 > Java8抛弃了segment分段锁机制，利用CAS+Synchronized来保证并发安全，数据结构采用：数组+链表+红黑树。
