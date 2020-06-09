@@ -4,6 +4,7 @@
 * [3. RemoveDuplicatesFromSortedList (删除有序链表中重复元素)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/linkList.md#3-removeduplicatesfromsortedlist-%E5%88%A0%E9%99%A4%E6%9C%89%E5%BA%8F%E9%93%BE%E8%A1%A8%E4%B8%AD%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0)
 * [4. ReverseLinkedList (链表反转)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/linkList.md#4-reverselinkedlist-%E9%93%BE%E8%A1%A8%E5%8F%8D%E8%BD%AC)
 * [5. RemoveNthNodeFromEndOfList (删除链表倒数第n个节点)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/linkList.md#5-removenthnodefromendoflist-%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E5%80%92%E6%95%B0%E7%AC%ACn%E4%B8%AA%E8%8A%82%E7%82%B9)
+* [6. SwapNodesInPairs (两两交换链表中的节点)]()
 ## ListNode类的定义
 ``` java
 class ListNode {
@@ -194,5 +195,38 @@ public class RemoveNthNodeFromEndOfList {
     }
 }
 ```
-
-
+## 6. SwapNodesInPairs (两两交换链表中的节点)
+问题描述：[LeedCode](https://leetcode-cn.com/problems/swap-nodes-in-pairs/)   
+解决代码：
+``` java
+/**
+ * 数据结构：链表
+ * leetcode：https://leetcode-cn.com/problems/swap-nodes-in-pairs/
+ * 两两交换链表中的节点
+ * */
+public class SwapNodesInPairs {
+    public ListNode swapPairs(ListNode head) {
+        //首先判断是否为空或者只有一个节点，是就返回该null/节点
+        if(head == null || head.next == null){
+            return head;
+        }
+        //两个指针分别指向前后两个节点
+        ListNode pre = head;
+        ListNode last = pre.next;
+        while(last != null){
+            //交换两节点的值
+            int tmp = last.val;
+            last.val = pre.val;
+            pre.val = tmp;
+            //如果后一指针没有节点，那么跳出循环
+            if(last.next == null){
+                break;
+            }
+            //两个指针都向后面移动两个位置
+            pre = pre.next.next;
+            last = last.next.next;
+        }
+        return head;
+    }
+}
+```
