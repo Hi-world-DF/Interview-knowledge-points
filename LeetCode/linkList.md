@@ -5,6 +5,7 @@
 * [4. ReverseLinkedList (链表反转)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/linkList.md#4-reverselinkedlist-%E9%93%BE%E8%A1%A8%E5%8F%8D%E8%BD%AC)
 * [5. RemoveNthNodeFromEndOfList (删除链表倒数第n个节点)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/linkList.md#5-removenthnodefromendoflist-%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E5%80%92%E6%95%B0%E7%AC%ACn%E4%B8%AA%E8%8A%82%E7%82%B9)
 * [6. SwapNodesInPairs (两两交换链表中的节点)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/linkList.md#6-swapnodesinpairs-%E4%B8%A4%E4%B8%A4%E4%BA%A4%E6%8D%A2%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E8%8A%82%E7%82%B9)
+* [7. AddTwoNumbersFromList (两个链表求和)]()
 ## ListNode类的定义
 ``` java
 class ListNode {
@@ -227,6 +228,54 @@ public class SwapNodesInPairs {
             last = last.next.next;
         }
         return head;
+    }
+}
+```
+## 7. AddTwoNumbersFromList (两个链表求和)
+问题描述：[LeedCode](https://leetcode-cn.com/problems/add-two-numbers-ii/)   
+解决代码：
+``` java
+/**
+ * 数据结构：链表
+ * leetcode：https://leetcode-cn.com/problems/add-two-numbers-ii/
+ * 链表求和
+ * */
+public class AddTwoNumbersFromList {
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        if(l1 == null){
+            return l2;
+        }
+        if(l2 == null){
+            return l1;
+        }
+        //使用栈让链表的元素从最后一个节点相加
+        Stack<Integer> s1 = new Stack<>();
+        Stack<Integer> s2 = new Stack<>();
+        ListNode newHead = new ListNode(-1);
+        //将l1的节点放到栈1中
+        while(l1 != null){
+            s1.push(l1.val);
+            l1 = l1.next;
+        }
+        //将l2的节点放到栈2中
+        while(l2 != null){
+            s2.push(l2.val);
+            l2 = l2.next;
+        }
+        //定义进位
+        int carry = 0;
+        //当所有节点都添加完，循环结束
+        while(!s1.isEmpty() || !s2.isEmpty() || carry != 0){
+            int a = s1.isEmpty()? 0 : s1.pop();
+            int b = s2.isEmpty()? 0 : s2.pop();
+            int sum = a + b + carry;
+            ListNode node = new ListNode(sum % 10);
+            //头插法把节点放在第一个位置
+            node.next = newHead.next;
+            newHead.next = node;
+            carry = sum/10;
+        }
+        return newHead.next;
     }
 }
 ```
