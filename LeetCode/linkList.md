@@ -8,6 +8,7 @@
 * [7. AddTwoNumbersFromList (两个链表求和)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/linkList.md#7-addtwonumbersfromlist-%E4%B8%A4%E4%B8%AA%E9%93%BE%E8%A1%A8%E6%B1%82%E5%92%8C)
 * [8. PalindromeLinkedList (回文链表)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/linkList.md#8-palindromelinkedlist-%E5%9B%9E%E6%96%87%E9%93%BE%E8%A1%A8)
 * [9. SplitLinkedListInParts (分隔链表)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/linkList.md#9-splitlinkedlistinparts-%E5%88%86%E9%9A%94%E9%93%BE%E8%A1%A8)
+* [10. OddEvenLinkedList (奇偶链表)]()
 ## ListNode类的定义
 ``` java
 class ListNode {
@@ -431,5 +432,34 @@ public class SplitLinkedListInParts {
     }
 }
 ```
+## 10. OddEvenLinkedList (奇偶链表)
+问题描述：[LeedCode](https://leetcode-cn.com/problems/odd-even-linked-list/)   
+解决代码：
+``` java
+/**
+ * 数据结构：链表
+ * leetcode：https://leetcode-cn.com/problems/odd-even-linked-list/
+ * 奇偶链表：把奇数位置的节点排一起，偶数位置的节点排一起
+ * */
+public class OddEvenLinkedList {
+    public ListNode oddEvenList(ListNode head) {
+        if(head == null || head.next == null){
+            return head;
+        }
+        //两个指针分别一个指向奇数位置的节点，另一个指向偶数位置的节点
+        ListNode odd = head;
+        ListNode even = head.next;
+        ListNode evenHead = even;
+        while(even != null && even.next != null){
+            odd.next = odd.next.next;
+            odd = odd.next;
+            even.next = even.next.next;
+            even = even.next;
+        }
+        //最后把偶数节点的链表接在奇数节点链表后面
+        odd.next = evenHead;
+        return head;
+    }
+}
 
-
+```
