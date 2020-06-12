@@ -7,7 +7,7 @@
 * [6. SwapNodesInPairs (两两交换链表中的节点)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/linkList.md#6-swapnodesinpairs-%E4%B8%A4%E4%B8%A4%E4%BA%A4%E6%8D%A2%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E8%8A%82%E7%82%B9)
 * [7. AddTwoNumbersFromList (两个链表求和)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/linkList.md#7-addtwonumbersfromlist-%E4%B8%A4%E4%B8%AA%E9%93%BE%E8%A1%A8%E6%B1%82%E5%92%8C)
 * [8. PalindromeLinkedList (回文链表)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/linkList.md#8-palindromelinkedlist-%E5%9B%9E%E6%96%87%E9%93%BE%E8%A1%A8)
-* [9. SplitLinkedListInParts (分隔链表)]()
+* [9. SplitLinkedListInParts (分隔链表)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/linkList.md#9-splitlinkedlistinparts-%E5%88%86%E9%9A%94%E9%93%BE%E8%A1%A8)
 ## ListNode类的定义
 ``` java
 class ListNode {
