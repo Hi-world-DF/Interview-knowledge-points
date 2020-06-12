@@ -7,6 +7,7 @@
 * [6. SwapNodesInPairs (两两交换链表中的节点)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/linkList.md#6-swapnodesinpairs-%E4%B8%A4%E4%B8%A4%E4%BA%A4%E6%8D%A2%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E8%8A%82%E7%82%B9)
 * [7. AddTwoNumbersFromList (两个链表求和)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/linkList.md#7-addtwonumbersfromlist-%E4%B8%A4%E4%B8%AA%E9%93%BE%E8%A1%A8%E6%B1%82%E5%92%8C)
 * [8. PalindromeLinkedList (回文链表)](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/linkList.md#8-palindromelinkedlist-%E5%9B%9E%E6%96%87%E9%93%BE%E8%A1%A8)
+* [9. SplitLinkedListInParts (分隔链表)]()
 ## ListNode类的定义
 ``` java
 class ListNode {
@@ -384,3 +385,51 @@ public class PalindromeLinkedList {
     }
 }
 ```
+## 9. SplitLinkedListInParts (分隔链表)
+问题描述：[LeedCode](https://leetcode-cn.com/problems/split-linked-list-in-parts/)   
+解决代码：
+``` java
+/**
+ * 数据结构：链表
+ * leetcode：https://leetcode-cn.com/problems/split-linked-list-in-parts/
+ * 分隔链表
+ * */
+public class SplitLinkedListInParts {
+    public ListNode[] splitListToParts(ListNode root, int k) {
+        int n = 0;
+        ListNode current = root;
+        //确定链表共有多少个节点
+        while(current != null){
+            n++;
+            current = current.next;
+        }
+        /**
+         * 分割之后链表的节点个数，前mod个链表的节点个数为size+1，之后的为size
+         * 若N<k,则前面每个链表为一个元素，后面的为空
+         */
+        int mod = n%k;
+        int size = n/k;
+        ListNode[] result = new ListNode[k];
+        current = root;
+        //给ListNode[]数组的每个链表元素循环赋值
+        for(int i = 0; current != null && i < k;i++){
+            result[i] = current;
+            int currentSize = size;
+            if(mod > 0){
+                currentSize = currentSize + 1;
+                mod--;
+            }
+            for(int j = 0; j < currentSize-1; j++){
+                current = current.next;
+            }
+            //ListNode[]数组里的每个链表元素结尾要指向null;
+            ListNode next = current.next;
+            current.next = null;
+            current = next;
+        }
+        return result;
+    }
+}
+```
+
+
