@@ -1,5 +1,10 @@
 # 栈和队列
 * [1. ImplementQueueUsingStacks（用栈实现队列）]()
+* [2. ImplementStackUsingQueues（用队列实现栈）]()
+* [3. MinStack（最小栈）]()
+* [4. ValidParentheses（有效括号,括号匹配问题）]()
+* [5. DailyTemperatures（每日温度）]()
+* []()
 
 ## 1. ImplementQueueUsingStacks（用栈实现队列）
 问题描述：[LeedCode](https://leetcode-cn.com/problems/implement-queue-using-stacks/)   
