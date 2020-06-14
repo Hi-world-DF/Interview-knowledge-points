@@ -72,7 +72,8 @@
 * [4. ValidParentheses（有效括号,括号匹配问题）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/stackAndQueue.md#4-validparentheses%E6%9C%89%E6%95%88%E6%8B%AC%E5%8F%B7%E6%8B%AC%E5%8F%B7%E5%8C%B9%E9%85%8D%E9%97%AE%E9%A2%98)
 * [5. DailyTemperatures（每日温度）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/stackAndQueue.md#5-dailytemperatures%E6%AF%8F%E6%97%A5%E6%B8%A9%E5%BA%A6)
 ## 3.字符串
-
+* [1.ValidAnagram（两个字符串所包含的字符是否完全相同）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/string.md#1validanagram%E4%B8%A4%E4%B8%AA%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%89%80%E5%8C%85%E5%90%AB%E7%9A%84%E5%AD%97%E7%AC%A6%E6%98%AF%E5%90%A6%E5%AE%8C%E5%85%A8%E7%9B%B8%E5%90%8C)
+* [2.LongestPalindrome（可以构成的最长的回文串）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/string.md#2longestpalindrome%E5%8F%AF%E4%BB%A5%E6%9E%84%E6%88%90%E7%9A%84%E6%9C%80%E9%95%BF%E7%9A%84%E5%9B%9E%E6%96%87%E4%B8%B2)
 ## 4.哈希表
 
 ## 5.数组和矩阵
