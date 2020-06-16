@@ -1,7 +1,7 @@
 # 数组和矩阵
-* [1.MaxConsecutiveOnes（最大连续1的个数）]()
-* [2.MoveZeroes（移动零到数组末尾）]()
-* [3.ReshapeTheMatrix（重塑矩阵）]()
+* [1.MaxConsecutiveOnes（最大连续1的个数）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/arraysAndMatrices.md#1maxconsecutiveones%E6%9C%80%E5%A4%A7%E8%BF%9E%E7%BB%AD1%E7%9A%84%E4%B8%AA%E6%95%B0)
+* [2.MoveZeroes（移动零到数组末尾）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/arraysAndMatrices.md#2movezeroes%E7%A7%BB%E5%8A%A8%E9%9B%B6%E5%88%B0%E6%95%B0%E7%BB%84%E6%9C%AB%E5%B0%BE)
+* [3.ReshapeTheMatrix（重塑矩阵）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/arraysAndMatrices.md#3reshapethematrix%E9%87%8D%E5%A1%91%E7%9F%A9%E9%98%B5)
 
 ## 1.MaxConsecutiveOnes（最大连续1的个数）
 问题描述：[LeetCode](https://leetcode-cn.com/problems/max-consecutive-ones/)   
