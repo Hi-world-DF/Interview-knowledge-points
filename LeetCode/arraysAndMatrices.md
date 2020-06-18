@@ -4,6 +4,8 @@
 * [3.ReshapeTheMatrix（重塑矩阵）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/arraysAndMatrices.md#3reshapethematrix%E9%87%8D%E5%A1%91%E7%9F%A9%E9%98%B5)
 * [4.SearchA2dMatrixII（搜索二维矩阵）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/arraysAndMatrices.md#4searcha2dmatrixii%E6%90%9C%E7%B4%A2%E4%BA%8C%E7%BB%B4%E7%9F%A9%E9%98%B5)
 * [5.KthSmallestElementInASortedMatrix（有序矩阵中第k小的元素）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/arraysAndMatrices.md#5kthsmallestelementinasortedmatrix%E6%9C%89%E5%BA%8F%E7%9F%A9%E9%98%B5%E4%B8%AD%E7%AC%ACk%E5%B0%8F%E7%9A%84%E5%85%83%E7%B4%A0)
+* [6.FindTheDuplicateNumber（寻找重复的数）]()
+* [7.SetMismatch（错误的集合）]()
 ## 1.MaxConsecutiveOnes（最大连续1的个数）
 问题描述：[LeetCode](https://leetcode-cn.com/problems/max-consecutive-ones/)   
 代码：
@@ -214,7 +216,8 @@ class Tuple implements Comparable<Tuple> {
         return this.val - that.val;
     }
 }
-```## 6.FindTheDuplicateNumber（寻找重复的数）
+```
+## 6.FindTheDuplicateNumber（寻找重复的数）
 问题描述：[LeetCode](https://leetcode-cn.com/problems/find-the-duplicate-number/)   
 代码：
 ``` java 
@@ -266,7 +269,7 @@ public class FindTheDuplicateNumber {
     }
 }
 ```
-```## 7.SetMismatch（错误的集合）
+## 7.SetMismatch（错误的集合）
 问题描述：[LeetCode](https://leetcode-cn.com/problems/set-mismatch/)   
 代码：
 ``` java 
