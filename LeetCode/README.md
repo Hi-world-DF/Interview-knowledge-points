@@ -89,6 +89,8 @@
 * [3.ReshapeTheMatrix（重塑矩阵）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/arraysAndMatrices.md#3reshapethematrix%E9%87%8D%E5%A1%91%E7%9F%A9%E9%98%B5)
 * [4.SearchA2dMatrixII（搜索二维矩阵）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/arraysAndMatrices.md#4searcha2dmatrixii%E6%90%9C%E7%B4%A2%E4%BA%8C%E7%BB%B4%E7%9F%A9%E9%98%B5)
 * [5.KthSmallestElementInASortedMatrix（有序矩阵中第k小的元素）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/arraysAndMatrices.md#5kthsmallestelementinasortedmatrix%E6%9C%89%E5%BA%8F%E7%9F%A9%E9%98%B5%E4%B8%AD%E7%AC%ACk%E5%B0%8F%E7%9A%84%E5%85%83%E7%B4%A0)
+* [6.FindTheDuplicateNumber（寻找重复的数）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/arraysAndMatrices.md#6findtheduplicatenumber%E5%AF%BB%E6%89%BE%E9%87%8D%E5%A4%8D%E7%9A%84%E6%95%B0)
+* [7.SetMismatch（错误的集合）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/arraysAndMatrices.md#7setmismatch%E9%94%99%E8%AF%AF%E7%9A%84%E9%9B%86%E5%90%88)
 ## 6.树
 
 ## 7.图
