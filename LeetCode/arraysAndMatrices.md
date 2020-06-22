@@ -337,3 +337,126 @@ public class SetMismatch {
 
 }
 ```
+
+## 8.DegreeOfAnArray（数组的度）
+问题描述：[LeetCode](https://leetcode-cn.com/problems/degree-of-an-array/)   
+代码：
+``` java 
+import java.util.HashMap;
+import java.util.Map;
+
+/**
+ * 数据结构：数组和矩阵
+ * leetcode：https://leetcode-cn.com/problems/degree-of-an-array/
+ * 题目描述：数组的度
+ * */
+public class DegreeOfAnArray {
+    public int findShortestSubArray(int[] nums) {
+        /**current用来找nums的度及对应的数字;
+         * lastIndex用来记录数字最后出现的位置;
+         * firstIndex用来记录数字最后出现的位置
+         */
+        Map<Integer,Integer> current = new HashMap<>();
+        Map<Integer,Integer> lastIndex = new HashMap<>();
+        Map<Integer,Integer> firstIndex = new HashMap<>();
+        for(int i = 0;i < nums.length;i++){
+            //如果map中没有nums[i]的key，则nums[i]的value设为0+1;否则就是它的value+1;
+            current.put(nums[i],current.getOrDefault(nums[i],0)+1);
+            lastIndex.put(nums[i],i);
+            if(!firstIndex.containsKey(nums[i])){
+                firstIndex.put(nums[i],i);
+            }
+        }
+        /**
+         * 现在：
+         * current放了所有num的key和value;key是数字，value是;
+         * lastIndex用来记录数字最后出现的位置;
+         * firstIndex用来记录数字第一次出现的位置
+         */
+        int maxDu = 0;
+        for(int num : nums){
+            maxDu = maxDu >= current.get(num)?maxDu:current.get(num);
+        }
+        int resultL = nums.length;
+        for(int i = 0;i < nums.length; i++){
+            int num = nums[i];
+            int currentNum = current.get(num);
+            if(currentNum != maxDu){
+                continue;
+            }
+            resultL = Math.min(resultL,lastIndex.get(num) - firstIndex.get(num)+1);
+        }
+        return resultL;
+    }
+    public static void main(String[] args){
+        DegreeOfAnArray degreeOfAnArray = new DegreeOfAnArray();
+        int[] a = {2,1,2,2,4,4,5,1};
+        int result = degreeOfAnArray.findShortestSubArray(a);
+        System.out.println(result);
+    }
+}
+```
+## 9.BeautifulArrangementII（优美的排列）
+问题描述：[LeetCode](https://leetcode-cn.com/problems/beautiful-arrangement-ii/)   
+代码：
+``` java 
+/**
+ * 数据结构：数组和矩阵
+ * leetcode：https://leetcode-cn.com/problems/beautiful-arrangement-ii/
+ * 题目描述：优美的排列
+ * */
+public class BeautifulArrangementII {
+    public int[] constructArray(int n, int k) {
+        int[] result = new int[n];
+        result[0] = 1;
+        int interval = k;
+        for(int i = 1;i <= k; i++){
+            result[i] = i%2 == 1?result[i-1]+interval:result[i-1]-interval;
+            interval--;
+        }
+        for(int i = k+1;i < n;i++){
+            result[i] = i+1;
+        }
+        return result;
+    }
+}
+```
+## 10.ToeplitzMatrix（托普利茨矩阵-对角元素相等的矩阵）
+问题描述：[LeetCode](https://leetcode-cn.com/problems/toeplitz-matrix/)   
+代码：
+``` java 
+/**
+ * 数据结构：数组和矩阵
+ * leetcode：https://leetcode-cn.com/problems/toeplitz-matrix/
+ * 题目描述：托普利茨矩阵(对角元素相等的矩阵)
+ * */
+public class ToeplitzMatrix {
+    public boolean isToeplitzMatrix(int[][] matrix) {
+        int m = matrix.length;
+        int n = matrix[0].length;
+        for(int i = 0;i < m;i++){
+            if(!check(matrix,matrix[i][0],i,0)){
+                return false;
+            }
+        }
+        for(int j = 0;j < n;j++){
+            if(!check(matrix,matrix[0][j],0,j)){
+                return false;
+            }
+        }
+        return true;
+    }
+
+    private boolean check(int[][] matrix, int value, int row, int col) {
+        int m = matrix.length;
+        int n = matrix[0].length;
+        if(row >= m || col >= n){
+            return true;
+        }
+        if(matrix[row][col] != value){
+            return false;
+        }
+        return check(matrix, value, row+1, col+1);
+    }
+}
+```
