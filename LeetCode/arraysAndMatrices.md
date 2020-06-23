@@ -9,8 +9,8 @@
 * [8.DegreeOfAnArray（数组的度）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/arraysAndMatrices.md#8degreeofanarray%E6%95%B0%E7%BB%84%E7%9A%84%E5%BA%A6)
 * [9.BeautifulArrangementII（优美的排列）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/arraysAndMatrices.md#9beautifularrangementii%E4%BC%98%E7%BE%8E%E7%9A%84%E6%8E%92%E5%88%97)
 * [10.ToeplitzMatrix（托普利茨矩阵-对角元素相等的矩阵）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/arraysAndMatrices.md#10toeplitzmatrix%E6%89%98%E6%99%AE%E5%88%A9%E8%8C%A8%E7%9F%A9%E9%98%B5-%E5%AF%B9%E8%A7%92%E5%85%83%E7%B4%A0%E7%9B%B8%E7%AD%89%E7%9A%84%E7%9F%A9%E9%98%B5)
-* [11.MaxChunksToMakeSorted（最多能完成排序的块）]()
-* [12.ArrayNesting（数组嵌套）]()
+* [11.MaxChunksToMakeSorted（最多能完成排序的块）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/arraysAndMatrices.md#11maxchunkstomakesorted%E6%9C%80%E5%A4%9A%E8%83%BD%E5%AE%8C%E6%88%90%E6%8E%92%E5%BA%8F%E7%9A%84%E5%9D%97)
+* [12.ArrayNesting（数组嵌套）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/arraysAndMatrices.md#12arraynesting%E6%95%B0%E7%BB%84%E5%B5%8C%E5%A5%97)
 ## 1.MaxConsecutiveOnes（最大连续1的个数）
 问题描述：[LeetCode](https://leetcode-cn.com/problems/max-consecutive-ones/)   
 代码：
