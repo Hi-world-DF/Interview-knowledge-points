@@ -91,6 +91,9 @@
 * [5.KthSmallestElementInASortedMatrix（有序矩阵中第k小的元素）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/arraysAndMatrices.md#5kthsmallestelementinasortedmatrix%E6%9C%89%E5%BA%8F%E7%9F%A9%E9%98%B5%E4%B8%AD%E7%AC%ACk%E5%B0%8F%E7%9A%84%E5%85%83%E7%B4%A0)
 * [6.FindTheDuplicateNumber（寻找重复的数）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/arraysAndMatrices.md#6findtheduplicatenumber%E5%AF%BB%E6%89%BE%E9%87%8D%E5%A4%8D%E7%9A%84%E6%95%B0)
 * [7.SetMismatch（错误的集合）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/arraysAndMatrices.md#7setmismatch%E9%94%99%E8%AF%AF%E7%9A%84%E9%9B%86%E5%90%88)
+* [8.DegreeOfAnArray（数组的度）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/arraysAndMatrices.md#8degreeofanarray%E6%95%B0%E7%BB%84%E7%9A%84%E5%BA%A6)
+* [9.BeautifulArrangementII（优美的排列）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/arraysAndMatrices.md#9beautifularrangementii%E4%BC%98%E7%BE%8E%E7%9A%84%E6%8E%92%E5%88%97)
+* [10.ToeplitzMatrix（托普利茨矩阵-对角元素相等的矩阵）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/arraysAndMatrices.md#10toeplitzmatrix%E6%89%98%E6%99%AE%E5%88%A9%E8%8C%A8%E7%9F%A9%E9%98%B5-%E5%AF%B9%E8%A7%92%E5%85%83%E7%B4%A0%E7%9B%B8%E7%AD%89%E7%9A%84%E7%9F%A9%E9%98%B5)
 ## 6.树
 
 ## 7.图
