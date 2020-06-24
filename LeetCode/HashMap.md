@@ -1,8 +1,8 @@
 # 哈希表 HashMap.HashSet.HashTable
-* [1.ContainsDuplicate（判断是否存在重复元素）]()
-* [2.TwoSum（两数之和）]()
-* [3.LongestConsecutiveSequence（最长连续序列）]()
-* [4.LongestHarmoniousSubsequence（最长和谐子序列）]()
+* [1.ContainsDuplicate（判断是否存在重复元素）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/HashMap.md#1containsduplicate%E5%88%A4%E6%96%AD%E6%98%AF%E5%90%A6%E5%AD%98%E5%9C%A8%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0)
+* [2.TwoSum（两数之和）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/HashMap.md#2twosum%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C)
+* [3.LongestConsecutiveSequence（最长连续序列）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/HashMap.md#3longestconsecutivesequence%E6%9C%80%E9%95%BF%E8%BF%9E%E7%BB%AD%E5%BA%8F%E5%88%97)
+* [4.LongestHarmoniousSubsequence（最长和谐子序列）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/HashMap.md#4longestharmonioussubsequence%E6%9C%80%E9%95%BF%E5%92%8C%E8%B0%90%E5%AD%90%E5%BA%8F%E5%88%97)
 
 ## 1.ContainsDuplicate（判断是否存在重复元素）
 问题描述：[LeetCode](https://leetcode-cn.com/problems/contains-duplicate/)   
