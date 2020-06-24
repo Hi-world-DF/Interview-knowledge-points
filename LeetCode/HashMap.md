@@ -1,5 +1,8 @@
 # 哈希表 HashMap.HashSet.HashTable
 * [1.ContainsDuplicate（判断是否存在重复元素）]()
+* [2.TwoSum（两数之和）]()
+* [3.LongestConsecutiveSequence（最长连续序列）]()
+* [4.LongestHarmoniousSubsequence（最长和谐子序列）]()
 
 ## 1.ContainsDuplicate（判断是否存在重复元素）
 问题描述：[LeetCode](https://leetcode-cn.com/problems/contains-duplicate/)   
@@ -113,7 +116,7 @@ public class LongestConsecutiveSequence {
     }
 }
 ```
-## 3.LongestHarmoniousSubsequence（最长和谐子序列）
+## 4.LongestHarmoniousSubsequence（最长和谐子序列）
 问题描述：[LeetCode](https://leetcode-cn.com/problems/longest-harmonious-subsequence/)   
 代码：
 ``` java 
