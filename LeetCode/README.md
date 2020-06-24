@@ -82,7 +82,10 @@
 * [2.LongestPalindrome（可以构成的最长的回文串）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/string.md#2longestpalindrome%E5%8F%AF%E4%BB%A5%E6%9E%84%E6%88%90%E7%9A%84%E6%9C%80%E9%95%BF%E7%9A%84%E5%9B%9E%E6%96%87%E4%B8%B2)
 * [3.IsomorphicStrings（同构字符串）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/string.md#3isomorphicstrings%E5%90%8C%E6%9E%84%E5%AD%97%E7%AC%A6%E4%B8%B2)
 ## 4.哈希表
-
+* [1.ContainsDuplicate（判断是否存在重复元素）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/HashMap.md#1containsduplicate%E5%88%A4%E6%96%AD%E6%98%AF%E5%90%A6%E5%AD%98%E5%9C%A8%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0)
+* [2.TwoSum（两数之和）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/HashMap.md#2twosum%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C)
+* [3.LongestConsecutiveSequence（最长连续序列）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/HashMap.md#3longestconsecutivesequence%E6%9C%80%E9%95%BF%E8%BF%9E%E7%BB%AD%E5%BA%8F%E5%88%97)
+* [4.LongestHarmoniousSubsequence（最长和谐子序列）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/HashMap.md#4longestharmonioussubsequence%E6%9C%80%E9%95%BF%E5%92%8C%E8%B0%90%E5%AD%90%E5%BA%8F%E5%88%97)
 ## 5.数组和矩阵
 * [1.MaxConsecutiveOnes（最大连续1的个数）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/arraysAndMatrices.md#1maxconsecutiveones%E6%9C%80%E5%A4%A7%E8%BF%9E%E7%BB%AD1%E7%9A%84%E4%B8%AA%E6%95%B0)
 * [2.MoveZeroes（移动零到数组末尾）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/arraysAndMatrices.md#2movezeroes%E7%A7%BB%E5%8A%A8%E9%9B%B6%E5%88%B0%E6%95%B0%E7%BB%84%E6%9C%AB%E5%B0%BE)
