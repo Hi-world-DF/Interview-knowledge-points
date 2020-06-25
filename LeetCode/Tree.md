@@ -1,10 +1,10 @@
 # Tree
-* [1.ContainsDuplicate（判断是否存在重复元素）]()
-* [2.MergeTwoBinaryTrees（合并二叉树）]()
-* [3.InvertBinaryTree（翻转二叉树）]()
-* [4.BalancedBinaryTree（平衡二叉树判断）]()
-* [5.DiameterOfBinaryTree（二叉树的直径）]()
-* [6.PathSum（路径总和）]()
+* [1.ContainsDuplicate（判断是否存在重复元素）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/Tree.md#1maximumdepthofbinarytree%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%9C%80%E5%A4%A7%E6%B7%B1%E5%BA%A6)
+* [2.MergeTwoBinaryTrees（合并二叉树）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/Tree.md#2mergetwobinarytrees%E5%90%88%E5%B9%B6%E4%BA%8C%E5%8F%89%E6%A0%91)
+* [3.InvertBinaryTree（翻转二叉树）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/Tree.md#3invertbinarytree%E7%BF%BB%E8%BD%AC%E4%BA%8C%E5%8F%89%E6%A0%91)
+* [4.BalancedBinaryTree（平衡二叉树判断）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/Tree.md#4balancedbinarytree%E5%B9%B3%E8%A1%A1%E4%BA%8C%E5%8F%89%E6%A0%91%E5%88%A4%E6%96%AD)
+* [5.DiameterOfBinaryTree（二叉树的直径）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/Tree.md#5diameterofbinarytree%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E7%9B%B4%E5%BE%84)
+* [6.PathSum（路径总和）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/Tree.md#6pathsum%E8%B7%AF%E5%BE%84%E6%80%BB%E5%92%8C)
 
 ## 1.MaximumDepthOfBinaryTree（二叉树的最大深度）
 问题描述：[LeetCode](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/)   
