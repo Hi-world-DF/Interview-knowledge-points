@@ -1,5 +1,10 @@
 # Tree
 * [1.ContainsDuplicate（判断是否存在重复元素）]()
+* [2.MergeTwoBinaryTrees（合并二叉树）]()
+* [3.InvertBinaryTree（翻转二叉树）]()
+* [4.BalancedBinaryTree（平衡二叉树判断）]()
+* [5.DiameterOfBinaryTree（二叉树的直径）]()
+* [6.PathSum（路径总和）]()
 
 ## 1.MaximumDepthOfBinaryTree（二叉树的最大深度）
 问题描述：[LeetCode](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/)   
