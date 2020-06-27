@@ -5,6 +5,10 @@
 * [4.BalancedBinaryTree（平衡二叉树判断）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/Tree.md#4balancedbinarytree%E5%B9%B3%E8%A1%A1%E4%BA%8C%E5%8F%89%E6%A0%91%E5%88%A4%E6%96%AD)
 * [5.DiameterOfBinaryTree（二叉树的直径）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/Tree.md#5diameterofbinarytree%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E7%9B%B4%E5%BE%84)
 * [6.PathSum（路径总和）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/Tree.md#6pathsum%E8%B7%AF%E5%BE%84%E6%80%BB%E5%92%8C)
+* [7.PathSumIII（路径总和 3）]()
+* [8.LongestUniValuePath（最长同值路径）]()
+* [9.SecondMinimumNodeInABinaryTree（间隔遍历（打家劫舍 III））]()
+* [10.SecondMinimumNodeInABinaryTree（二叉树中第二小的节点）]()
 
 ## 1.MaximumDepthOfBinaryTree（二叉树的最大深度）
 问题描述：[LeetCode](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/)   
@@ -147,6 +151,108 @@ public class PathSum {
             return true;
         }
         return false;
+    }
+}
+```
+## 7.PathSumIII（路径总和 3）
+问题描述：[LeetCode](https://leetcode-cn.com/problems/path-sum-iii/)   
+代码：
+``` java 
+/**
+ * 数据结构：树【递归】
+ * leetcode:https://leetcode-cn.com/problems/path-sum-iii/
+ * 题目描述：路径总和 3
+ * */
+public class PathSumIII {
+    public int pathSum(TreeNode root, int sum) {
+        if(root == null) return 0;
+        int result =pathSumStartRoot(root,sum)+ pathSum(root.left,sum)+pathSum(root.right,sum);
+        return result;
+    }
+
+    private int pathSumStartRoot(TreeNode root, int sum) {
+        if(root == null) return 0;
+        int result = 0;
+        if(root.val == sum) result++;
+        result += pathSumStartRoot(root.left,sum-root.val)+pathSumStartRoot(root.right,sum-root.val);
+        return result;
+    }
+}
+```
+
+## 8.LongestUniValuePath（最长同值路径）
+问题描述：[LeetCode](https://leetcode-cn.com/problems/longest-univalue-path/)   
+代码：
+``` java 
+/**
+ * 数据结构：树【递归】
+ * leetcode:https://leetcode-cn.com/problems/longest-univalue-path/
+ * 题目描述：最长同值路径
+ * */
+public class LongestUniValuePath {
+    private int path = 0;
+    public int longestUnivaluePath(TreeNode root) {
+        dfs(root);
+        return path;
+    }
+    private int dfs(TreeNode root) {
+        if(root == null) return 0;
+        int l = dfs(root.left);
+        int r = dfs(root.right);
+        int lPath = 0,rPath = 0;
+        if(root.left != null && root.left.val == root.val){
+            lPath = l + 1;
+        }
+        if(root.right != null && root.right.val == root.val){
+            rPath = r + 1;
+        }
+        path = Math.max(path,lPath+rPath);
+        return Math.max(lPath,rPath);
+    }
+}
+```
+## 9.SecondMinimumNodeInABinaryTree（间隔遍历（打家劫舍 III））
+问题描述：[LeetCode](https://leetcode-cn.com/problems/house-robber-iii/)   
+代码：
+``` java 
+/**
+ * 数据结构：树【递归】
+ * leetcode:https://leetcode-cn.com/problems/house-robber-iii/
+ * 题目描述：间隔遍历（打家劫舍 III）
+ * */
+public class HouseRobberIII {
+    public int rob(TreeNode root) {
+        if (root == null) return 0;
+        int val1 = root.val;
+        if(root.left != null) val1 += rob(root.left.left) + rob(root.left.right);
+        if(root.right != null) val1 += rob(root.right.left) + rob(root.right.right);
+        int val2 = rob(root.left) + rob(root.right);
+        return Math.max(val1,val2);
+    }
+}
+```
+## 10.SecondMinimumNodeInABinaryTree（二叉树中第二小的节点）
+问题描述：[LeetCode](https://leetcode-cn.com/problems/second-minimum-node-in-a-binary-tree/)   
+代码：
+``` java 
+/**
+ * 数据结构：树【递归】
+ * leetcode:https://leetcode-cn.com/problems/second-minimum-node-in-a-binary-tree/
+ * 题目描述：二叉树中第二小的节点
+ * */
+
+public class SecondMinimumNodeInABinaryTree {
+    public int findSecondMinimumValue(TreeNode root) {
+        if(root == null) return -1;
+        if(root.left == null && root.right == null) return -1;
+        int lv = root.left.val;
+        int rv = root.right.val;
+        if(lv == root.val) lv = findSecondMinimumValue(root.left);
+        if(rv == root.val) rv = findSecondMinimumValue(root.right);
+        if(lv != -1 && rv != -1) return Math.min(lv,rv);
+        if(lv != -1) return lv;
+        if(rv != -1) return rv;
+        return -1;
     }
 }
 ```
