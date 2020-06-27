@@ -5,10 +5,10 @@
 * [4.BalancedBinaryTree（平衡二叉树判断）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/Tree.md#4balancedbinarytree%E5%B9%B3%E8%A1%A1%E4%BA%8C%E5%8F%89%E6%A0%91%E5%88%A4%E6%96%AD)
 * [5.DiameterOfBinaryTree（二叉树的直径）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/Tree.md#5diameterofbinarytree%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E7%9B%B4%E5%BE%84)
 * [6.PathSum（路径总和）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/Tree.md#6pathsum%E8%B7%AF%E5%BE%84%E6%80%BB%E5%92%8C)
-* [7.PathSumIII（路径总和 3）]()
-* [8.LongestUniValuePath（最长同值路径）]()
-* [9.SecondMinimumNodeInABinaryTree（间隔遍历（打家劫舍 III））]()
-* [10.SecondMinimumNodeInABinaryTree（二叉树中第二小的节点）]()
+* [7.PathSumIII（路径总和 3）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/Tree.md#7pathsumiii%E8%B7%AF%E5%BE%84%E6%80%BB%E5%92%8C-3)
+* [8.LongestUniValuePath（最长同值路径）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/Tree.md#8longestunivaluepath%E6%9C%80%E9%95%BF%E5%90%8C%E5%80%BC%E8%B7%AF%E5%BE%84)
+* [9.SecondMinimumNodeInABinaryTree（间隔遍历（打家劫舍 III））](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/Tree.md#9secondminimumnodeinabinarytree%E9%97%B4%E9%9A%94%E9%81%8D%E5%8E%86%E6%89%93%E5%AE%B6%E5%8A%AB%E8%88%8D-iii)
+* [10.SecondMinimumNodeInABinaryTree（二叉树中第二小的节点）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/Tree.md#10secondminimumnodeinabinarytree%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%AD%E7%AC%AC%E4%BA%8C%E5%B0%8F%E7%9A%84%E8%8A%82%E7%82%B9)
 
 ## 1.MaximumDepthOfBinaryTree（二叉树的最大深度）
 问题描述：[LeetCode](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/)   
