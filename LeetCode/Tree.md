@@ -10,7 +10,12 @@
     * [8.LongestUniValuePath（最长同值路径）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/Tree.md#8longestunivaluepath%E6%9C%80%E9%95%BF%E5%90%8C%E5%80%BC%E8%B7%AF%E5%BE%84)
     * [9.SecondMinimumNodeInABinaryTree（间隔遍历（打家劫舍 III））](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/Tree.md#9secondminimumnodeinabinarytree%E9%97%B4%E9%9A%94%E9%81%8D%E5%8E%86%E6%89%93%E5%AE%B6%E5%8A%AB%E8%88%8D-iii)
     * [10.SecondMinimumNodeInABinaryTree（二叉树中第二小的节点）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/Tree.md#10secondminimumnodeinabinarytree%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%AD%E7%AC%AC%E4%BA%8C%E5%B0%8F%E7%9A%84%E8%8A%82%E7%82%B9)
-* 层次遍历
+* 遍历
+   * [1.BinaryTreePreOrderTraversal（二叉树的前序遍历）]()
+   * [2.BinaryTreeInorderTraversal（二叉树的中序遍历）]()
+   * [3.BinaryTreePostorderTraversal（二叉树的后序遍历）]()
+   * [4.FindBottomLeftTreeValue（层次遍历--找树左下角的值）]()
+   * [5.AverageOfLevelsInBinaryTree（层次遍历--二叉树的层平均值）]()
 # 递归
 ## 1.MaximumDepthOfBinaryTree（二叉树的最大深度）
 问题描述：[LeetCode](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/)   
