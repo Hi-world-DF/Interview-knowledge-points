@@ -258,3 +258,167 @@ public class SecondMinimumNodeInABinaryTree {
     }
 }
 ```
+# 遍历
+
+## 1.BinaryTreePreOrderTraversal（二叉树的前序遍历）
+问题描述：[LeetCode](https://leetcode-cn.com/problems/binary-tree-preorder-traversal/)   
+代码：
+``` java 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Stack;
+
+/**
+ * 数据结构：树【遍历】
+ * leetcode:https://leetcode-cn.com/problems/binary-tree-preorder-traversal/
+ * 题目描述：二叉树的前序遍历
+ * */
+
+public class BinaryTreePreOrderTraversal {
+    /**递归*/
+    /** void dfs(TreeNode root) {
+        visit(root);
+        dfs(root.left);
+        dfs(root.right);
+    }*/
+    public List<Integer> preOrderTraversal(TreeNode root) {
+        List<Integer> resultList = new ArrayList<>();
+        Stack<TreeNode> stack = new Stack<>();
+        if(root == null) return resultList;
+        stack.push(root);
+        while(!stack.isEmpty()){
+            TreeNode node = stack.pop();
+            if(node == null) continue;
+            resultList.add(node.val);
+            stack.push(node.right);
+            stack.push(node.left);
+        }
+        return resultList;
+    }
+}
+```
+## 2.BinaryTreeInorderTraversal（二叉树的中序遍历）
+问题描述：[LeetCode](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/)   
+代码：
+``` java 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Stack;
+
+/**
+ * 数据结构：树【遍历】
+ * leetcode:https://leetcode-cn.com/problems/binary-tree-inorder-traversal/
+ * 题目描述：二叉树的中序遍历
+ * */
+public class BinaryTreeInorderTraversal {
+    public List<Integer> inorderTraversal(TreeNode root) {
+        List<Integer> resultList = new ArrayList<>();
+        Stack<TreeNode> stack = new Stack<>();
+        if(root == null) return resultList;
+        TreeNode currentNode = root;
+        while(currentNode != null || !stack.isEmpty()){
+            while(currentNode != null){
+                stack.push(currentNode);
+                currentNode = currentNode.left;
+            }
+            TreeNode node = stack.pop();
+            resultList.add(node.val);
+            currentNode = node.right;
+        }
+        return resultList;
+    }
+}
+```
+## 3.BinaryTreePostorderTraversal（二叉树的后序遍历）
+问题描述：[LeetCode](https://leetcode-cn.com/problems/binary-tree-postorder-traversal/)   
+代码：
+``` java 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Stack;
+
+/**
+ * 数据结构：树【遍历】
+ * leetcode:https://leetcode-cn.com/problems/binary-tree-postorder-traversal/
+ * 题目描述：二叉树的后序遍历
+ * */
+public class BinaryTreePostorderTraversal {
+    public List<Integer> postorderTraversal(TreeNode root) {
+        List<Integer> resultList = new ArrayList<>();
+        Stack<TreeNode> stack = new Stack<>();
+        if(root == null) return resultList;
+        stack.push(root);
+        while(!stack.isEmpty()){
+            TreeNode node = stack.pop();
+            if(node == null) continue;
+            resultList.add(node.val);
+            stack.push(node.left);
+            stack.push(node.right);
+        }
+        Collections.reverse(resultList);
+        return resultList;
+    }
+}
+```
+## 4.FindBottomLeftTreeValue（层次遍历--找树左下角的值）
+问题描述：[LeetCode](https://leetcode-cn.com/problems/find-bottom-left-tree-value/)   
+代码：
+``` java 
+import java.util.LinkedList;
+import java.util.Queue;
+
+/**
+ * 数据结构：树【层次遍历】
+ * leetcode:https://leetcode-cn.com/problems/find-bottom-left-tree-value/
+ * 题目描述：找树左下角的值
+ * */
+
+public class FindBottomLeftTreeValue {
+    public int findBottomLeftValue(TreeNode root) {
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(root);
+        while(!queue.isEmpty()){
+            root = queue.poll();
+            if(root.right != null) queue.add(root.right);
+            if(root.left != null) queue.add(root.left);
+        }
+        return root.val;
+    }
+}
+```
+## 5.AverageOfLevelsInBinaryTree（层次遍历--二叉树的层平均值）
+问题描述：[LeetCode](https://leetcode-cn.com/problems/average-of-levels-in-binary-tree/)   
+代码：
+``` java 
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
+
+/**
+ * 数据结构：树【层次遍历】
+ * leetcode:https://leetcode-cn.com/problems/average-of-levels-in-binary-tree/
+ * 题目描述：二叉树的层平均值
+ * */
+public class AverageOfLevelsInBinaryTree {
+    public List<Double> averageOfLevels(TreeNode root) {
+        List<Double> result = new ArrayList<>();
+        Queue<TreeNode> queue = new LinkedList<>();
+        if(root == null) return result;
+        queue.add(root);
+        while(!queue.isEmpty()){
+            double sum = 0;
+            int currentL = queue.size();
+            for (int i = 0; i < currentL; i++) {
+                TreeNode node = queue.poll();
+                sum += node.val;
+                if (node.left != null) queue.add(node.left);
+                if (node.right != null) queue.add(node.right);
+            }
+            result.add(sum / currentL);
+        }
+        return result;
+    }
+}
+```
