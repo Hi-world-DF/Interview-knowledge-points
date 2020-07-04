@@ -17,9 +17,9 @@
    * [4.FindBottomLeftTreeValue（层次遍历--找树左下角的值）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/Tree.md#4findbottomlefttreevalue%E5%B1%82%E6%AC%A1%E9%81%8D%E5%8E%86--%E6%89%BE%E6%A0%91%E5%B7%A6%E4%B8%8B%E8%A7%92%E7%9A%84%E5%80%BC)
    * [5.AverageOfLevelsInBinaryTree（层次遍历--二叉树的层平均值）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/Tree.md#5averageoflevelsinbinarytree%E5%B1%82%E6%AC%A1%E9%81%8D%E5%8E%86--%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E5%B1%82%E5%B9%B3%E5%9D%87%E5%80%BC)
 * BST
-   * [1.ConvertBstToGreaterTree（把二叉搜索树转换为累加树）]()
-   * [2.ConvertSortedArrayToBinarySearchTree（将有序数组转换为二叉搜索树）]()
-   * [3.ConvertSortedListToBinarySearchTree（有序链表转换二叉搜索树）]()
+   * [1.ConvertBstToGreaterTree（把二叉搜索树转换为累加树）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/Tree.md#1convertbsttogreatertree%E6%8A%8A%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E8%BD%AC%E6%8D%A2%E4%B8%BA%E7%B4%AF%E5%8A%A0%E6%A0%91)
+   * [2.ConvertSortedArrayToBinarySearchTree（将有序数组转换为二叉搜索树）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/Tree.md#2convertsortedarraytobinarysearchtree%E5%B0%86%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E8%BD%AC%E6%8D%A2%E4%B8%BA%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91)
+   * [3.ConvertSortedListToBinarySearchTree（有序链表转换二叉搜索树）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/Tree.md#3convertsortedlisttobinarysearchtree%E6%9C%89%E5%BA%8F%E9%93%BE%E8%A1%A8%E8%BD%AC%E6%8D%A2%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91)
 # 递归
 ## 1.MaximumDepthOfBinaryTree（二叉树的最大深度）
 问题描述：[LeetCode](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/)   
