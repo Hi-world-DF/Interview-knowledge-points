@@ -430,3 +430,89 @@ public class AverageOfLevelsInBinaryTree {
     }
 }
 ```
+# BST
+## 1.ConvertBstToGreaterTree（把二叉搜索树转换为累加树）
+问题描述：[LeetCode](https://leetcode-cn.com/problems/convert-bst-to-greater-tree/)   
+代码：
+``` java 
+/**
+ * 数据结构：树【BST 二叉查找树】
+ * leetcode:https://leetcode-cn.com/problems/convert-bst-to-greater-tree/
+ * 题目描述：把二叉搜索树转换为累加树
+ * */
+public class ConvertBstToGreaterTree {
+    private int sum = 0;
+    public TreeNode convertBST(TreeNode root) {
+        traver(root);
+        return root;
+    }
+
+    private void traver(TreeNode node) {
+        if(node == null) return;
+        traver(node.right);
+        sum += node.val;
+        node.val = sum;
+        traver(node.left);
+    }
+}
+```
+
+## 2.ConvertSortedArrayToBinarySearchTree（将有序数组转换为二叉搜索树）
+问题描述：[LeetCode](https://leetcode-cn.com/problems/convert-sorted-array-to-binary-search-tree/)   
+代码：
+``` java 
+/**
+ * 数据结构：树【BST 二叉查找树】
+ * leetcode:https://leetcode-cn.com/problems/convert-sorted-array-to-binary-search-tree/
+ * 题目描述：将有序数组转换为二叉搜索树
+ * */
+public class ConvertSortedArrayToBinarySearchTree {
+    public TreeNode sortedArrayToBST(int[] nums) {
+        return toBST(nums,0,nums.length -1);
+    }
+
+    private TreeNode toBST(int[] nums, int start, int end) {
+        if(start > end) return null;
+        int mid = (start + end) / 2;
+        TreeNode root = new TreeNode(nums[mid]);
+        root.left = toBST(nums,start,mid -1);
+        root.right = toBST(nums,mid +1,end);
+        return root;
+    }
+
+}
+```
+## 3.ConvertSortedListToBinarySearchTree（有序链表转换二叉搜索树）
+问题描述：[LeetCode](https://leetcode-cn.com/problems/convert-sorted-array-to-binary-search-tree/)   
+代码：
+``` java 
+/**
+ * 数据结构：树【BST 二叉查找树】
+ * leetcode:https://leetcode-cn.com/problems/convert-sorted-array-to-binary-search-tree/
+ * 题目描述：有序链表转换二叉搜索树
+ * */
+public class ConvertSortedListToBinarySearchTree {
+    public TreeNode sortedListToBST(ListNode head) {
+        if(head == null) return null;
+        if(head.next == null) return new TreeNode(head.val);
+        ListNode preMid = preMid(head);
+        ListNode mid = preMid.next;
+        preMid.next = null;
+        TreeNode treeNode = new TreeNode(mid.val);
+        treeNode.left = sortedListToBST(head);
+        treeNode.right = sortedListToBST(mid.next);
+        return treeNode;
+    }
+
+    private ListNode preMid(ListNode head) {
+        ListNode first = head,last = head.next;
+        ListNode pre = head;
+        while(last != null && last.next != null){
+            pre = first;
+            first = first.next;
+            last = last.next.next;
+        }
+        return pre;
+    }
+}
+```
