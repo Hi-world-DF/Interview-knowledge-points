@@ -1,9 +1,9 @@
 # 位运算
 
-* [1.HammingDistance（统计两个数的二进制表示有多少位不同）]()
-* [2.MissingNumber（数组中缺失的那个数）]()
-* [3.SingleNumber（数组中唯一的单一元素）]()
-* [4.SingleNumberIII（数组中唯一的单一元素）]()
+* [1.HammingDistance（统计两个数的二进制表示有多少位不同）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/bitOperation.md#1hammingdistance%E7%BB%9F%E8%AE%A1%E4%B8%A4%E4%B8%AA%E6%95%B0%E7%9A%84%E4%BA%8C%E8%BF%9B%E5%88%B6%E8%A1%A8%E7%A4%BA%E6%9C%89%E5%A4%9A%E5%B0%91%E4%BD%8D%E4%B8%8D%E5%90%8C)
+* [2.MissingNumber（数组中缺失的那个数）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/bitOperation.md#2missingnumber%E6%95%B0%E7%BB%84%E4%B8%AD%E7%BC%BA%E5%A4%B1%E7%9A%84%E9%82%A3%E4%B8%AA%E6%95%B0)
+* [3.SingleNumber（数组中唯一的单一元素）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/bitOperation.md#3singlenumber%E6%95%B0%E7%BB%84%E4%B8%AD%E5%94%AF%E4%B8%80%E7%9A%84%E5%8D%95%E4%B8%80%E5%85%83%E7%B4%A0)
+* [4.SingleNumberIII（数组中唯一的单一元素）](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/bitOperation.md#4singlenumberiii%E6%95%B0%E7%BB%84%E4%B8%AD%E5%94%AF%E4%B8%80%E7%9A%84%E5%8D%95%E4%B8%80%E5%85%83%E7%B4%A0)
 
 ## 1.HammingDistance（统计两个数的二进制表示有多少位不同）
 问题描述：[LeetCode](https://leetcode-cn.com/problems/hamming-distance/)   
