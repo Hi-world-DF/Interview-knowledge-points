@@ -1,9 +1,9 @@
 # 位运算
 
-* [1.ContainsDuplicate（判断是否存在重复元素）]()
-* [1.ContainsDuplicate（判断是否存在重复元素）]()
-* [1.ContainsDuplicate（判断是否存在重复元素）]()
-* [1.ContainsDuplicate（判断是否存在重复元素）]()
+* [1.HammingDistance（统计两个数的二进制表示有多少位不同）]()
+* [2.MissingNumber（数组中缺失的那个数）]()
+* [3.SingleNumber（数组中唯一的单一元素）]()
+* [4.SingleNumberIII（数组中唯一的单一元素）]()
 
 ## 1.HammingDistance（统计两个数的二进制表示有多少位不同）
 问题描述：[LeetCode](https://leetcode-cn.com/problems/hamming-distance/)   
