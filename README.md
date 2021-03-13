@@ -1,14 +1,29 @@
-# Interview-knowledge-points
-面试知识点总结
-## [一、并发编程](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/Concurrent/README.md)
-### 1.[volatile]()
-### 2.[CAS原理]()
-### 3.[集合类的线程不安全问题]()
-### 4.[锁]()
-## [二、LeetCode练习](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/README.md#leetcode%E5%88%B7%E9%A2%98)
-### 1.[双指针](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/README.md#1%E5%8F%8C%E6%8C%87%E9%92%88%E9%97%AE%E9%A2%98)
-### 2.[排序](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/README.md#2%E6%8E%92%E5%BA%8F)
-### 3.[贪心算法](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/README.md#3%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95)
-### 4.[二分查找](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/README.md#4%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE)
-### 5.[分治算法](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/README.md#5%E5%88%86%E6%B2%BB%E7%AE%97%E6%B3%95)
-### 6.[搜索算法](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/LeetCode/README.md#6%E6%90%9C%E7%B4%A2%E7%AE%97%E6%B3%95)
+找工作计划：代号live
+
+# FB-knowledge-points
+
+找工作笔试面试笔记总结。
+
+## 笔试
+
+* [1.leetcode编程题]()
+* [2.剑指offer编程题]()
+* [3.公司笔试真题]()
+
+## 面试
+
+* [1.主题一：Java基础]()
+* [2.主题二：Java并发]()
+* [3.主题三：Spring]()
+* [4.主题四：Netty]()
+* [5.主题五：分布式]()
+* [6.主题六：数据库]()
+* [7.主题七：缓存]()
+* [8.主题八：JVM]()
+* [9.主题九：计算机网络]()
+
+## 面经
+
+* [1.腾讯面经]()
+* [2.vivo面经]()
+* [3.富途面经]()
