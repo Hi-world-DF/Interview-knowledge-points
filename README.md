@@ -27,3 +27,4 @@
 * [1.腾讯面经]()
 * [2.vivo面经]()
 * [3.富途面经]()
+* [4.Shopee面经](https://github.com/Hi-world-DF/Interview-knowledge-points/blob/master/FaceSutra/Shopee%E9%9D%A2%E7%BB%8F.md)
